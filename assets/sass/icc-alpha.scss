@@ -27,6 +27,8 @@
  */
 
 @import "templates/links";
+@import "templates/sample-page";
+@import "templates/timeline";
 @import "templates/typography";
 
 /**
@@ -42,6 +44,3 @@ body {
 	max-width: 80%;
 }
 
-.post {
-	@include gs-span(d, 1, 8);
-}

@@ -1,0 +1,57 @@
+.post {
+	@include gs-span(d, 1, 8);
+}
+
+.box {		
+			outline: 1px solid #99999a;
+			*border: 1px solid #99999a;
+			margin-bottom: 20px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+.black {
+	background: $black;
+	@include gs-span(d, 1, 1);
+}	
+
+.grey-1 {
+	background: $grey-1;
+	@include gs-span(d, 2, 2);
+}
+
+.grey-2 {
+	background: $grey-2;
+	@include gs-span(d, 3, 3);
+}
+
+.grey-3 {
+	background: $grey-3;
+	@include gs-span(d, 4, 4);
+}
+
+
+.dark-blue {
+	background: $dark-blue;
+	@include gs-span(d, 5, 5);
+}
+
+.dark-grey {
+	background: $dark-grey;
+	@include gs-span(d, 6, 6);
+}
+
+.light-blue {
+	background: $light-blue;
+	@include gs-span(d, 7, 7);
+}
+
+.new-box{
+	clear: both;
+}
+
+.colours p {
+	color: $white;
+	font-size: $milli-size;
+	text-align: center;
+}

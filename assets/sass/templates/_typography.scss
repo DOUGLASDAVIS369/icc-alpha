@@ -11,6 +11,10 @@
 
 	}
 
+	h1,h2,h3,h4,h5,h5 {
+		font-style: normal;
+		font-weight: 700;
+	}
 
 	.italic { 
 		font-style: italic;
@@ -66,7 +70,7 @@
 	}
 	
 	/*  Class for muted text */
-	.muted {color: #999999;}
+	.muted {color: $grey-4;}
 	
 	
 	/*  Defines a thematic change in the content */

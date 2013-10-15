@@ -29,7 +29,7 @@ $use-columns:       false;
 $use-nav:           true;
 $use-options:       false;
 $use-pagination:    false;
-$use-breadcrumb:    false;
+$use-breadcrumb:    true;
 $use-media:         false;
 $use-marginalia:    true;
 $use-island:        false;
@@ -74,10 +74,10 @@ $base-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
 $giga-size:         96px!default;
 $mega-size:         80px!default;
-$kilo-size:         48px!default;
+$kilo-size:         64px!default;
 
-$h1-size:           36px!default; // .alpha
-$h2-size:           30px!default; // .beta
+$h1-size:           48px!default; // .alpha
+$h2-size:           36px!default; // .beta
 $h3-size:           24px!default; // .gamma
 $h4-size:           20px!default; // .delta - use delta for paragraph 
 $h5-size:           16px!default; // .epsilon
@@ -108,9 +108,9 @@ $light-blue: #6699cc;
 
 
 // Semantic colour names
-$link-colour: #2e3191;
-$link-active-colour: #2e8aca;
-$link-hover-colour: #2e8aca;
+$link-colour: $dark-blue;
+$link-active-colour: $light-blue;
+$link-hover-colour: $light-blue;
 $link-visited-colour: #2e3191;
 $button-colour: #00823b;
 $text-colour: $black;             // Standard text colour

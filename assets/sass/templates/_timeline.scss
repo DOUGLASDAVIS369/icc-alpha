@@ -1,0 +1,118 @@
+#archives_timeline {
+    width: 100%;
+}
+#archives_timeline time {
+    color: $grey-2;
+    float: right;
+    font-size: 1rem;
+    margin-top: 0.6em;
+}
+@media only screen and (max-width: 40em) {
+#archives_timeline time {
+    display: none;
+}
+}
+#archives_timeline h1 {
+    border-bottom: 3px solid $grey-3;
+    color: $grey-3;
+    display: inline-block;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+#archives_timeline .timeline {
+    background: url("images/line.png") repeat-y scroll 0 0 rgba(0, 0, 0, 0);
+    list-style: none outside none;
+    margin: 0 auto 5em;
+    padding: 30px 0;
+    position: relative;
+}
+#archives_timeline .timeline .spine {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 29px;
+    z-index: 1;
+}
+#archives_timeline .timeline > li {
+    clear: right;
+    float: right;
+    margin-bottom: 15px;
+    margin-left: 0;
+    position: relative;
+    width: 94%;
+    z-index: 2;
+}
+#archives_timeline .timeline .end .pointer {
+    border: medium none;
+    height: 12px;
+    left: -7.3%;
+    width: 12px;
+}
+#archives_timeline .timeline .pointer {
+    background: none repeat scroll 0 0 #CCCCCC;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px 10px 10px 10px;
+    height: 5px;
+    left: -7%;
+    position: absolute;
+    top: 20px;
+    width: 5px;
+}
+#archives_timeline .timeline .spine > a, #archives_timeline .timeline .spine a:visited {
+    display: block;
+    height: 100%;
+}
+#archives_timeline .right .title .tag {
+    background: none repeat scroll 0 0 #84ABD6;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 0.75em;
+    font-weight: bold;
+    line-height: 1;
+    margin-left: 7px;
+    padding: 3px;
+}
+#archives_timeline .right .title .tag.featured {
+    background: none repeat scroll 0 0 #D68484;
+}
+#archives_timeline .right .entry:after, #archives_timeline .right .entry:before {
+    border: medium solid rgba(0, 0, 0, 0);
+    content: " ";
+    height: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 100%;
+    width: 0;
+}
+#archives_timeline .right .entry:after {
+    border-color: rgba(255, 255, 255, 0) #FFFFFF rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+    border-width: 10px;
+    margin-top: -10px;
+    top: 23px;
+}
+#archives_timeline .right .entry:before {
+    border-color: rgba(238, 238, 238, 0) #BBBBBB rgba(238, 238, 238, 0) rgba(238, 238, 238, 0);
+    border-width: 11px;
+    margin-top: -11px;
+    top: 23px;
+}
+#archives_timeline .entry {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 2.1;
+    padding: 5px 10px;
+    position: relative;
+    text-decoration: none !important;
+}
+#archives_timeline .entry.feature {
+    font-size: 1.4em;
+    font-weight: bold;
+    line-height: 1.5;
+}
+#archives_timeline .entry.feature .tag.featured {
+    font-size: 0.75rem;
+}
