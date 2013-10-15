@@ -1,0 +1,47 @@
+
+@charset "UTF-8";
+
+@import "compass/reset";
+
+//@import "photoshop-drop-shadow";
+@import "templates/fonts";
+@import "templates/mixins";
+
+/**
+ * Innuit Setup
+ */
+
+@import "vars";
+@import "inuit.css/inuit";
+
+
+/**
+ * Gridset Setup
+ */
+
+@import "grid/gridset";
+
+
+/**
+ * Template-specific stuff
+ */
+
+@import "templates/links";
+@import "templates/typography";
+
+/**
+ * Some initial styles and grids
+ */
+
+body {
+	color: $black;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 80%;
+}
+
+.post {
+	@include gs-span(d, 1, 8);
+}
