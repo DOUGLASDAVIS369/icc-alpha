@@ -1,7 +1,5 @@
-Starter WordPress theme
-=======
-wordpress-starter-theme
+ICC alpha front end
 =======================
 
-Begins of a theme using Sass, Inuit, Gridset and Grunt
+Begins of a development project using Sass, Inuit, Gridset and Grunt
 
