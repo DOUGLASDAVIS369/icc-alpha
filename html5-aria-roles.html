@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>HTML5 Plus ARIA Roles</title>
+
+		<!--[if IE]><script src="/js/html5.js"></script><![endif]-->
+		
+	</head>
+	<body>
+		<header id="banner" role="banner">
+			<div id="siteName"><a href="/">Accessible Culture</a></div>
+			<nav role="navigation">
+				<ul>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section id="main" role="main">
+			<header>
+				<h1>Title</h1>
+				<nav role="navigation">
+					<ul>
+						<li><a href="#">Link 1</a></li>
+						<li><a href="#">Link 2</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section role="region" aria-labelledby="articles">
+				<header><h2 id="articles">Articles Section</h2></header>
+				<p><a href="#libero">Skip to link in Article A</a></p>
+				<article role="article">
+					<header><h3>Article A</h3></header>
+					<p>Vivamus placerat, <a id="libero" href="#">libero ut convallis elementum</a>.</p>
+					<aside role="complementary">
+						<p>This is some text in an aside.</p>
+					</aside>
+					<footer>Footer for Article A</footer>
+				</article>
+				<article role="article">
+					<header><h3>Article B</h3></header>
+					<p>Aliquam vehicula justo ut metus. <a href="#">Maecenas sollicitudin</a>.</p>
+					<footer>Footer for Article B</footer>
+				</article>
+			</section>
+			<section role="application">
+				<h2 id="app">Application Section</h2>
+				<button>Button that does nothing</button>
+			</section>
+		</section>
+		<footer role="contentinfo">
+			<p><time datetime="2011-03-11">March 11, 2011</time></p>
+		</footer>
+	</body>
+</html>
