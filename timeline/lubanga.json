@@ -10,17 +10,20 @@
         {   
                 "startDate":"2004,6,21",
                 "headline":"OTP opens investigation",
-                "text":"After a preliminary analysis, the Prosecutor initiates an investigation."
+                "text":"After a preliminary analysis, the Prosecutor initiates an investigation.",
+                "tag":"Prosection"
             },
 			{
                 "startDate":"2006,1,13",
                 "headline":"OTP application for arrest warrant",
-                "text":"Following his initial investigation into crimes allegedly committed in the Ituri District since 1 July 2002, the Prosecution files an application for the issuance of a warrant of arrest for Thomas Lubanga Dyilo."
+                "text":"Following his initial investigation into crimes allegedly committed in the Ituri District since 1 July 2002, the Prosecution files an application for the issuance of a warrant of arrest for Thomas Lubanga Dyilo.",
+                "tag":"Prosection"
             },
              {
                 "startDate":"2006,2,10",
                 "headline":"Warrants of arrest issued",
                 "text":"The ICC's Pre-Trial Chamber I issues a warrant of arrest under seal for Mr Lubanga Dyilo.",
+                "tag":"Pre-Trial",
                 "asset":
                 {
                     "media":"<blockquote><a href='http://www.icc-cpi.int/en_menus/icc/situations%20and%20cases/situations/situation%20icc%200104/related%20cases/icc%200104%200106/court%20records/chambers/pre%20trial%20chamber%20i/Pages/warrant%20of%20arrest.aspx'>Warrant of Arrest</a></blockquote>"
@@ -29,12 +32,15 @@
             {
                 "startDate":"2006,3,17",
                 "headline":"DRC authorites surrender accused to court",
-                "text":"The Congolese authorities surrender Mr Lubanga Dyilo, who is then detained at the Centre pénitentiaire et de rééducation de Kinshasa [Kinshasa Penitentiary and Re-education Centre], to the Court. He is then transferred to the Court’s Detention Centre in The Hague."
+                "text":"The Congolese authorities surrender Mr Lubanga Dyilo, who is then detained at the Centre pénitentiaire et de rééducation de Kinshasa [Kinshasa Penitentiary and Re-education Centre], to the Court. He is then transferred to the Court’s Detention Centre in The Hague.",
+                "tag":"Trial"
+
             },   
             {
                 "startDate":"2006,3,20",
                 "headline":"First appearance",
                 "text":"Mr Lubanga Dyilo makes his first appearance before the Court. At this hearing, the Chamber verifies Mr Lubanga Dyilo’s identity and ensures that he has been informed of the crimes which he is alleged to have committed and of his rights before the Court.",
+                "tag":"Trial",
                 "asset":
                 {
                     "media":"http://www.flickr.com/photos/icc-cpi/3816730665/in/set-72157621903256299",
@@ -46,6 +52,7 @@
                 "startDate":"2006,3,31",
                 "headline":"ICC provides legal assitance for defence",
                 "text":"The Registrar provisionally finds Mr Lubanga Dyilo indigent, pending verification by the Court of the information contained in his application. The cost of his defence is therefore borne by the Court under the legal assistance scheme.",
+                "tag":"Defence",
                 "asset":
                 {
                     "media":"<blockquote><a href='http://www.icc-cpi.int/en_menus/icc/situations%20and%20cases/situations/situation%20icc%200104/related%20cases/icc%200104%200106/court%20records/registry/registrar/Pages/registrar%20s%20decision%20on%20mr%20thomas%20lubanga%20dyilo%20s%20application%20for%20legal%20assistan.aspx'>Registrar's Decision on Mr Thomas Lubanga Dyilo's Application for Legal Assistance paid by the Court</a></blockquote>"
@@ -54,12 +61,14 @@
             {
                 "startDate":"2006,11,9",
                 "headline":"Confirmation hearing",
-                "text":"The confirmation hearing begins at the seat of the Court in The Hague and finishes on 28 November 2006."
+                "text":"The confirmation hearing begins at the seat of the Court in The Hague and finishes on 28 November 2006.",
+                "tag":"Trial"
             },
              {
                 "startDate":"2007,1,29",
                 "headline":"Confirmation of charges",
                 "text":"The judges of the Pre-Trial Chamber confirms the charges against Thomas Lubanga Dyilo.",
+                "tag":"Pre-Trial",
                 "asset":
                 {
                     "media":"<blockquote><a href='http://www.icc-cpi.int/en_menus/icc/situations%20and%20cases/situations/situation%20icc%200104/related%20cases/icc%200104%200106/court%20records/chambers/pre%20trial%20chamber%20i/Pages/decision%20on%20the%20confirmation%20of%20charges.aspx'>Decision on the confirmation of charges</a></blockquote>"
@@ -68,22 +77,26 @@
              {
                 "startDate":"2007,2,20",
                 "headline":"Defence counsel withdraws",
-                "text":"Counsel for the Defence, Jean Flamme, files a confidential application with Pre-Trial Chamber I for leave to withdraw from the case for personal reasons."
+                "text":"Counsel for the Defence, Jean Flamme, files a confidential application with Pre-Trial Chamber I for leave to withdraw from the case for personal reasons.",
+                "tag":"Defence"
             },
             {
                 "startDate":"2007,6,14",
                 "headline":"Additional resources to Defence",
-                "text":"Following an application filed by Thomas Lubanga Dyilo on 3 May 2007, the Registrar issues a decision granting additional resources to the Defence for the trial phase."
+                "text":"Following an application filed by Thomas Lubanga Dyilo on 3 May 2007, the Registrar issues a decision granting additional resources to the Defence for the trial phase.",
+                "tag":"Defence"
             },
             {
                 "startDate":"2007,6,20",
                 "headline":"New defence counsel appointed",
-                "text":"Thomas Lubanga Dyilo appoints Catherine Mabille as his counsel."
+                "text":"Thomas Lubanga Dyilo appoints Catherine Mabille as his counsel.",
+                "tag":"Defence"
             },
              {
                 "startDate":"2008,6,13",
                 "headline":"Stay of proceedings",
                 "text":"Trial Chamber I decides to stay proceedings against Mr Lubanga Dyilo. According to Trial Chamber I, it is impossible for the trial to be fair since the Prosecutor had not disclosed to the Defence, or made available to the judges, important potentially exculpatory evidence. The Prosecutor had obtained the evidence in question on a confidential basis from several sources, including the UN, and these sources had refused to disclose it to the Defence and, in most cases, to the Trial Chamber. ",
+                "tag":"Trial",
                 "asset":
                 {
                     "media":"<blockquote><a href='http://www.icc-cpi.int/en_menus/icc/situations%20and%20cases/situations/situation%20icc%200104/related%20cases/icc%200104%200106/court%20records/chambers/trial%20chamber%20i/Pages/decision%20on%20the%20consequences%20of%20non_disclosure%20of%20exculpatory%20materials%20covered.aspx'>Decision on the consequences of non-disclosure of exculpatory materials covered by Article 54(3)(e) agreements and the application to stay the prosecution of the accused, together with certain other issues raised at the Status Conference on 10 </a></blockquote>"
@@ -93,6 +106,7 @@
                 "startDate":"2008,7,23",
                 "headline":"Release order",
                 "text":"Trial Chamber I orders Mr Lubanga Dyilo’s unconditional release. That decision is not executed, as a result of the suspensive effect of the appeal filed by the Prosecutor.",
+                "tag":"Trial",
                 "asset":
                 {
                     "media":"<blockquote><a href='http://www.icc-cpi.int/en_menus/icc/situations%20and%20cases/situations/situation%20icc%200104/related%20cases/icc%200104%200106/court%20records/chambers/trial%20chamber%20i/Pages/decision%20on%20the%20prosecution_s%20application%20for%20leave%20to%20appeal%20the%20decision%20on%20th.aspx'>Decision on the Prosecution's Application for Leave to Appeal the 'Decision on the consequences of non-disclosure of exculpatory materials covered by Article 54(3)(e) agreements and the application to stay the prosecution of the accused' </a></blockquote>"
@@ -102,6 +116,7 @@
                 "startDate":"2008,10,21",
                 "headline":"Appeals Chamber decision",
                 "text":"The Appeals Chamber decides to uphold the decision to stay the proceedings, but reverses the decision to release Mr Lubanga Dyilo, and remands the case to the Trial Chamber for a new determination, taking into account the new position of the sources of the documents in question, who had agreed that the documents be submitted to the judges.",
+                "tag":"Appeal",
                 "asset":
                 {
                     "media":"<blockquote><a href='http://www.icc-cpi.int/en_menus/icc/situations%20and%20cases/situations/situation%20icc%200104/related%20cases/icc%200104%200106/court%20records/chambers/appeals%20chamber/Pages/1487.aspx'>Judgment on the appeal of the Prosecutor against the decision of Trial Chamber I entitled 'Decision on the release of Thomas Lubanga Dyilo' </a></blockquote>"
@@ -110,6 +125,7 @@
             {
                 "startDate":"2008,11,18",
                 "headline":"The trial commences before Trial Chamber I",
+                "tag":"Trial",
                 "asset":
                 {
                     "media":"http://www.flickr.com/photos/icc-cpi/3817541928/in/set-72157621903256299",
@@ -121,6 +137,7 @@
                 "startDate":"2010,7,8",
                 "headline":"Stay of proceedings",
                 "text":"Trial Chamber I orders to stay the proceedings in this case, considering that the fair trial of the accused is no longer possible due to non-implementation of the Chamber’s orders by the Prosecution. The judges had ordered the Office of the Prosecutor to confidentially disclose to the Defence the names and other necessary identifying information, of intermediary 143. ",
+                "tag":"Trial",
                 "asset":
                 {
                     "media":"<blockquote><a href='http://www.icc-cpi.int/en_menus/icc/situations%20and%20cases/situations/situation%20icc%200104/related%20cases/icc%200104%200106/court%20records/chambers/trial%20chamber%20i/Pages/2517.aspx'>Redacted Decision on the Prosecution's Urgent Request for Variation of the Time-Limit to Disclose the Identity of Intermediary 143 or Alternatively to Stay Proceedings Pending Further Consultations with the VWU</a></blockquote>"
@@ -130,6 +147,7 @@
                 "startDate":"2010,10,8",
                 "headline":"Appeals Chamber decision",
                 "text":"The Appeals Chamber reverses Trial Chamber I’s decision considering that the Trial Chamber erred by resorting immediately to a stay of proceedings without first imposing sanctions to bring about the Prosecutor’s compliance with its orders.",
+                "tag":"Appeal",
                 "asset":
                 {
                     "media":"<blockquote><a href='http://www.icc-cpi.int/en_menus/icc/situations%20and%20cases/situations/situation%20icc%200104/related%20cases/icc%200104%200106/court%20records/chambers/appeals%20chamber/Pages/2583.aspx'>Judgment on the appeal of Prosecutor against the oral decision of Trial Chamber I of 15 July 2010 to release Thomas Lubanga Dyilo </a></blockquote>"
@@ -138,12 +156,14 @@
             {   
                 "startDate":"2011,5,20",
                 "headline":"The presentation phase of evidence ends",
-                "text":" "
+                "text":" ",
+                "tag":"Trial"
             },
             {
                 "startDate":"2011,8,25",
                 "headline":"Closing statements (Prosecution)",
                 "text":"Pursuant to the decision of Trial Chamber I, the parties and participants in the trial present their closing statements at a public hearing on 25 and 26 August 2011.",
+                "tag":"Trial",
                 "asset":
                 {
                     "media":"http://youtu.be/KA-c09zPq7A",
@@ -155,6 +175,7 @@
                 "startDate":"2011,8,25",
                 "headline":"Closing statements (Defence)",
                 "text":" ",
+                "tag":"Defence",
                 "asset":
                 {
                     "media":"http://youtu.be/RP17wz9Ij94",
@@ -166,6 +187,7 @@
                 "startDate":"2011,8,25",
                 "headline":"Closing statements (Legal representatives of victims)",
                 "text":" ",
+                "tag":"Victims",
                 "asset":
                 {
                     "media":"http://youtu.be/bd1BMPb40vA",
@@ -177,6 +199,7 @@
                 "startDate":"2012,3,14",
                 "headline":"Verdict",
                 "text":"Trial Chamber I decides unanimously that Thomas Lubanga Dyilo is guilty, as a co-perpetrator, of the war crimes of conscripting and enlisting children under the age of 15 and using them to participate actively in hostilities from 1 September 2002 to 13 August 2003. It is the first verdict issued by an ICC Trial Chamber.",
+                "tag":"Trial",
                 "asset":
                 {
                     "media":"http://youtu.be/idfFygv8uZE",
@@ -187,6 +210,7 @@
              {
                 "startDate":"2012,7,10",
                 "headline":"Sentence",
+                "tag":"Trial",
                 "text":"Trial Chamber I sentences Thomas Lubanga Dyilo to a total period of 14 years of imprisonment, of which the period that he spent in the ICC custody shall be deducted. The defence is entitled to appeal the conviction within 30 days of receiving the French translation of the Judgment.",
                 "asset":
                 {
@@ -196,6 +220,7 @@
              {
                 "startDate":"2012,8,7",
                 "headline":"Reparations to victims",
+                "tag":"Victims",
                 "text":"Trial Chamber I issues a decision on the principles to be applied for reparations to victims in the case. Proposals for reparations, as advanced by the victims themselves, are to be collected by the Trust Fund for Victims and presented to a newly-constituted Trial Chamber I for approval. Reparations will then be implemented through the resources of the Fund that are available for this purpose. This decision is currently subject to appeal.",
                 "asset":
                 {
