@@ -1,0 +1,156 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+#map { position:absolute; top:0; bottom:0; right:300px; left:0; }
+
+.header {
+  max-width:100%;
+  max-height:100%;
+}
+
+.leaflet-popup {
+    display: none !important; 
+}
+
+#info {
+      position:absolute; top: 0; right: 0;
+      bottom: 0; width: 260px; background:#eeebe7; color: #333;
+      padding:20px;
+      border-left: 2px solid #e6e2db;
+  }
+
+#info p, #info li  { 
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+#info h1 { 
+  margin-top:0; 
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.figure {
+  font-size: 36px;
+  line-height: 15px;
+  padding-bottom: 24px;
+  padding-right: 6px;
+}
+
+.caption {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+
+.embed-container { 
+  position: relative; 
+  padding-bottom: 56.25%; 
+  padding-top: 30px; 
+  height: 0; 
+  overflow: hidden; 
+  max-width: 100%; 
+  height: auto; 
+} 
+
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed 
+counter-reset: 
+  { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+a.read-more {
+  padding-top: 10px;
+  font-weight: 700;
+  color: #219375;
+  text-decoration: none;
+  border-bottom: 2px solid #219375;
+}
+
+a.read-more:hover {
+  color: #635C45;
+  text-decoration: none;
+  border-bottom: 2px solid #635C45;
+}
+
+
+.ippf-div-icon {
+  background: transparent;
+  border: none;
+}
+
+ 
+.leaflet-marker-icon .number{
+  position: relative;
+  top: -30px;
+  font-size: 12px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #005395;
+}
+
+
+.leaflet-marker-icon .number:hover {
+  color: white;
+}
+
+
+#mapui {
+  display: none;
+}
+
+#filters {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    z-index: 100;
+    padding: 0px 5px 5px 5px;
+    background: #fff;
+}
+
+#filters ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#options {line-height: 18px;}
+
+.filter-title {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+ul#options {
+  overflow:hidden;
+  width: 600px;
+}
+
+#options li  { 
+  float:left;
+  display:inline;
+  width:50%;
+} 
+
+
+            
+
+            
+
+            
+
+            
