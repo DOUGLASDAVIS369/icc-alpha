@@ -1,29 +1,31 @@
 .story-lede {
 	@include gs-span(d, all);
+	padding-top: $base-spacing-unit;
 	padding-bottom: $base-spacing-unit;
-
+	border-bottom: 2px solid $black;
 }
 
 .nav-side {
-	@include gs-span(d, 1, 2);
-	clear:both;
+	margin-top: 2*$base-spacing-unit;
+	@include gs-span(d, 1, 2);	
 }
 
 #side-menu.affix {
     position: fixed;
-    top:25px;
-
+    top: $base-spacing-unit;
 }    
 
 .clean a {
-	text-decoration: none; 
+	text-decoration: none;
+	padding: 5px 0 5px 10px; 
 }
 
 .active {
-	border-right: 2px solid #000000;
+	border-left: 5px solid $black;
 	font-weight: 700;
 }
 
 .main-content {
+	padding-top: 2*$base-spacing-unit;
 	@include gs-span(d, 4, 12);
 }
