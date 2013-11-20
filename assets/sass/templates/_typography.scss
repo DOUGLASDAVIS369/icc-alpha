@@ -7,7 +7,7 @@
 	p {
 		font-style: normal;
 		font-weight: 400;
-		font-size: $h4-size;
+		@include font-size($h4-size);
 
 	}
 
@@ -51,6 +51,12 @@
 
 	.micro {
 		font-size: 	$micro-size;
+	}
+
+
+	.lede,
+	.lead{
+	    @include font-size($base-font-size*1.5);
 	}
 
 	.no-padding {margin: 0;}
