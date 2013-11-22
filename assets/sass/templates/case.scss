@@ -1,0 +1,61 @@
+
+.case-intro {
+	@include gs-span(d, 1, 9);	
+}
+
+.full-case-name {
+	@extend .epsilon;
+	@extend .italic;
+	margin-bottom: ($base-spacing-unit/12);
+	font-weight: normal;
+}
+
+.case-number {
+	@extend .zeta;
+	margin-bottom: ($base-spacing-unit/4);
+	font-weight: normal;
+}
+
+.accused {
+	@include gs-span(d, 10, 12);	
+}
+
+.accused-name {
+	@extend .gamma;
+}	
+
+
+.featured {
+	padding-top: $base-spacing-unit;
+	clear: both;
+	@include gs-span(d, 1, 4);	
+}
+
+.court-records {
+	padding-top: $base-spacing-unit;
+	@include gs-span(d, 5, 8);	
+}
+
+.case-news {
+	padding-top: $base-spacing-unit;
+	@include gs-span(d, 9, 12);	
+}
+
+.date {
+	@extend .zeta;
+	padding-right: ($base-spacing-unit);
+}
+
+.type {
+	@extend .zeta;
+}
+
+.article-title {
+	@extend .epsilon;
+	margin-bottom: ($base-spacing-unit/12);
+}
+
+.featured-title {
+	@extend .delta;
+	margin-bottom: ($base-spacing-unit/6);
+}
