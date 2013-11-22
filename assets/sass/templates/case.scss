@@ -59,3 +59,12 @@
 	@extend .delta;
 	margin-bottom: ($base-spacing-unit/6);
 }
+
+.timeline {
+	padding-top: 2*$base-spacing-unit;
+	clear: both;
+}
+
+.section-title {
+	@extend .beta;
+}

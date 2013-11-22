@@ -7,6 +7,8 @@
 
 <meta name="description" content="155 characters of message matching text with a call to action goes here">
 <link rel="author" href="https://plus.google.com/[YOUR PERSONAL G+ PROFILE HERE]"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
 
 <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=0, initial-scale=1">
 
@@ -26,6 +28,26 @@
 <!-- CSS -->
 <!--[if (!IE) | (gt IE 9)]><!--><link rel="stylesheet" href="assets/build/icc-alpha.css" /><!--<![endif]-->
 <!--[if lte IE 8]><link rel="stylesheet" href="assets/build/icc-alpha-old-ie.css.css" /><![endif]-->
+
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/build/jquery-1.10.2.min.js"><\/script>')</script>	
+
+<script type="text/javascript" src="timeline/compiled/js/storyjs-embed.js"></script>
+
+ <script>
+            $(document).ready(function() {
+                createStoryJS({
+                    type:       'timeline',
+                    width:      '100%',
+                    height:     '600',
+                    source:     'timeline/lubanga.json',
+                    embed_id:   'my-timeline',
+                    start_at_end: 'true'
+                });
+            });
+        </script>
+
+
 
 </head>
 
@@ -99,6 +121,11 @@
 		</article><!-- case-news-article --> 
 
 	</section><!-- case-news --> 
+
+	<section class="timeline">
+		<h1 class="section-title">In the courtroom</h1>
+	 <div id="my-timeline"></div>
+	</section><!-- timeline--> 
 
 </div><!-- wrapper -->
 	
