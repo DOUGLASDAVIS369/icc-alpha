@@ -7,7 +7,6 @@
 	p {
 		font-style: normal;
 		font-weight: 400;
-		@include font-size($h4-size);
 
 	}
 
@@ -53,10 +52,13 @@
 		font-size: 	$micro-size;
 	}
 
-
 	.lede,
 	.lead{
-	    @include font-size($base-font-size*1.5);
+	    @include font-size($base-font-size*1.25);
+	}
+
+	.clear {
+		clear:both;
 	}
 
 	.no-padding {margin: 0;}
