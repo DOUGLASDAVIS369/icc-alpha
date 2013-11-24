@@ -4,6 +4,8 @@
 
 .case-intro {
 	@include gs-span(d, 1, 9);	
+
+	@include respond-to(mobile) {@include gs-span(m, all);}
 }
 
 .full-case-name {
