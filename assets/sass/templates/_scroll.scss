@@ -29,3 +29,16 @@
 	padding-top: 2*$base-spacing-unit;
 	@include gs-span(d, 4, 12);
 }
+
+.main-content p.first-para:first-line {
+    color: #CC2F27;
+    font-size: 30px;
+    line-height: 150%;
+}
+.main-content p.first-para:first-letter {
+    color: #CC2F27;
+    float: left;
+    font-size: 175px;
+    line-height: 100%;
+    margin-right: 0.2em;
+}

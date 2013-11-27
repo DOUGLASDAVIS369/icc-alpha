@@ -52,16 +52,14 @@
 
 @function gs-grid($prefix){
 
-  @if $prefix == d	{ @return (7.06426570700682,7.07130884330493,7.0731784172421905,7.074476768415919,7.077367493904722,7.076714715270546,7.076146820938859,7.082507690766591,7.07910459916307,7.075939430056024,7.0806865328320105,7.080412356098321); }
-  @if $prefix == t	{ @return (6.644875896414544,6.6517333534937055,6.6570639182257185,6.660773884613598,6.65818469084358,6.65602208261202,6.656688477036897,6.657286642431464,6.65783533185947,6.66017516184187,6.662388996951002,6.65978406367613); }
-  @if $prefix == m	{ @return (3,19.4921875,19.4921875,19.4921875,19.4921875,3); }
+  @if $prefix == d	{ @return (6.04166666,6.04166666,6.04166666,6.04166666,6.04166666,6.04166666,6.04166666,6.04166666,6.04166666,6.04166666,6.04166666,6.04166666); }
+  @if $prefix == m	{ @return (6.25,16.8359375,16.8359375,16.8359375,16.8359375,6.25); }
 
 }
 
 @function gs-contraints($prefix){
   
   @if $prefix == d	{ @return (false,false,false,false,false,false,false,false,false,false,false,false); }
-  @if $prefix == t	{ @return (false,false,false,false,false,false,false,false,false,false,false,false); }
   @if $prefix == m	{ @return (false,false,false,false,false,false); }
 
 }
@@ -70,9 +68,8 @@
   
   $gutter: 0;
 
-  @if $prefix == d	{ $gutter: 1.3671875; }
-  @if $prefix == t	{ $gutter: 1.82291667; }
-  @if $prefix == m	{ $gutter: 3.125; }
+  @if $prefix == d	{ $gutter: 2.5; }
+  @if $prefix == m	{ $gutter: 4; }
 
   @if $unit == true { @return #{gs-adjust($prefix, $gutter, $container) + '%'}; }
   @else { @return gs-adjust($prefix, $gutter, $container); }
@@ -192,18 +189,13 @@
 @mixin gs-media($prefix, $type: false){
 
   @if $prefix == d {
-    @if ($type == min) or ($type == min-max) { @media only screen and (min-width: 1024px) { @content; } }
+    @if ($type == min) or ($type == min-max) { @media only screen and (min-width: 768px) { @content; } }
     @else { @content; }
   }
-  @else if $prefix == t {
-    @if $type == min { @media only screen and (min-width: 768px) { @content; } }
-    @else if ($type == max) { @media only screen and (max-width: 1023px) { @content; } }
-    @else if ($type == min-max) { @media only screen and (min-width: 768px) and (max-width: 1023px) { @content; } }
-  }
   @else if $prefix == m {
-    @if $type == min { @media only screen and (min-width: 320px) { @content; } }
+    @if $type == min { @media only screen and (min-width: 250px) { @content; } }
     @else if ($type == max) { @media only screen and (max-width: 767px) { @content; } }
-    @else if ($type == min-max) { @media only screen and (min-width: 320px) and (max-width: 767px) { @content; } }
+    @else if ($type == min-max) { @media only screen and (min-width: 250px) and (max-width: 767px) { @content; } }
   }
 
 }
@@ -299,4 +291,4 @@
 //   
 //   -------------------------------------------------------------- 
 
-$gs-prefixes: d, t, m;
+$gs-prefixes: d, m;
