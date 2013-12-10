@@ -61,6 +61,16 @@
 		clear:both;
 	}
 
+	ol,
+		.numbered{
+		    list-style:decimal outside;
+		}
+
+
+	ul > li {
+  		list-style-type: disc;
+	}
+
 	.no-padding {margin: 0;}
 
 	.uppercase {text-transform: uppercase;}

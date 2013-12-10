@@ -1,7 +1,5 @@
 # Require any additional compass plugins here.
 
-Encoding.default_external = 'utf-8'
-
 require 'compass-photoshop-drop-shadow'
 
 # Set this to the root of your project when deployed:
