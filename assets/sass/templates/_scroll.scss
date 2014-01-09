@@ -139,3 +139,9 @@
 .column-3 {
 	@include gs-span(d, 10, 12, (4, 12));
 }
+
+.background {
+	background-color: $light-blue;
+	color: white;
+	padding: $base-spacing-unit/2;
+}
