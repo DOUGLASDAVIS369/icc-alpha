@@ -23,7 +23,7 @@
                 "startDate":"2006,2,10",
                 "headline":"Warrants of arrest issued",
                 "text":"The ICC's Pre-Trial Chamber I issues a warrant of arrest under seal for Mr Lubanga Dyilo.",
-                "tag":"Pre-Trial",
+                "tag":"Key case developments",
                 "asset":
                 {
                     "media":"<blockquote><a href='http://www.icc-cpi.int/en_menus/icc/situations%20and%20cases/situations/situation%20icc%200104/related%20cases/icc%200104%200106/court%20records/chambers/pre%20trial%20chamber%20i/Pages/warrant%20of%20arrest.aspx'>Warrant of Arrest</a></blockquote>"
@@ -40,7 +40,7 @@
                 "startDate":"2006,3,20",
                 "headline":"First appearance",
                 "text":"Mr Lubanga Dyilo makes his first appearance before the Court. At this hearing, the Chamber verifies Mr Lubanga Dyilo’s identity and ensures that he has been informed of the crimes which he is alleged to have committed and of his rights before the Court.",
-                "tag":"Trial",
+                "tag":"Key case developments",
                 "asset":
                 {
                     "media":"http://youtu.be/lNAkWGOZSEs",
@@ -68,7 +68,7 @@
                 "startDate":"2007,1,29",
                 "headline":"Confirmation of charges",
                 "text":"The judges of the Pre-Trial Chamber confirms the charges against Thomas Lubanga Dyilo.",
-                "tag":"Pre-Trial",
+                "tag":"Key case developments",
                 "asset":
                 {
                     "media":"<blockquote><a href='http://www.icc-cpi.int/en_menus/icc/situations%20and%20cases/situations/situation%20icc%200104/related%20cases/icc%200104%200106/court%20records/chambers/pre%20trial%20chamber%20i/Pages/decision%20on%20the%20confirmation%20of%20charges.aspx'>Decision on the confirmation of charges</a></blockquote>"
@@ -199,7 +199,7 @@
                 "startDate":"2012,3,14",
                 "headline":"Verdict",
                 "text":"Trial Chamber I decides unanimously that Thomas Lubanga Dyilo is guilty, as a co-perpetrator, of the war crimes of conscripting and enlisting children under the age of 15 and using them to participate actively in hostilities from 1 September 2002 to 13 August 2003. It is the first verdict issued by an ICC Trial Chamber.",
-                "tag":"Trial",
+                "tag":"Key case developments",
                 "asset":
                 {
                     "media":"http://youtu.be/idfFygv8uZE",
@@ -210,7 +210,7 @@
              {
                 "startDate":"2012,7,10",
                 "headline":"Sentence",
-                "tag":"Trial",
+                "tag":"Key case developments",
                 "text":"Trial Chamber I sentences Thomas Lubanga Dyilo to a total period of 14 years of imprisonment, of which the period that he spent in the ICC custody shall be deducted. The defence is entitled to appeal the conviction within 30 days of receiving the French translation of the Judgment.",
                 "asset":
                 {

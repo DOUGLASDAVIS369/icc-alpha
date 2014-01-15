@@ -16,12 +16,12 @@
 	margin-left: 0;
 }
 
-.otp-report-header {
+.otp-report-header, .rome-statute-header {
 	padding-top: $base-spacing-unit;
 	padding-bottom: 3*$base-spacing-unit;
 }
 
-.otp-report li {
+.long-text li {
 	padding-bottom: $base-spacing-unit;
 }
 
@@ -29,14 +29,14 @@
 	padding-bottom: 0.25*$base-spacing-unit;
 }
 
-.otp-report h2 {
+.long-text h2 {
 	padding-top: 1.5*$base-spacing-unit;
 }
 
-.otp-report h3, .otp-report h4 {
+.long-text h3, .long-text h4 {
 	padding-top: 1.25*$base-spacing-unit;
 }
 
-.otp-report h6 {
+.long-text h6 {
 	@extend .bold;
 }
