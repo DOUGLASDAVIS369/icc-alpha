@@ -2,7 +2,7 @@
 	@include gs-span(d, all);
 	padding-top: $base-spacing-unit;
 	padding-bottom: $base-spacing-unit;
-	border-bottom: 2px solid $black;
+	/* border-bottom: 1px solid $grey-3; */
 }
 
 .nav-side {

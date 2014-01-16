@@ -52,6 +52,10 @@
 		font-size: 	$micro-size;
 	}
 
+	.huge {
+		font-size: 	$kilo-size;
+	}
+
 	.lede,
 	.lead{
 	    @include font-size($base-font-size*1.25);
@@ -61,6 +65,19 @@
 		clear:both;
 	}
 
+	.centre {
+		text-align: center;
+	}
+
+	.centre-ab {
+		position: absolute;
+		cursor: pointer;
+    	display: block;
+    	left: 50%;
+    	margin-left: -8px;
+    	margin-bottom: $base-spacing-unit*2;
+	} 
+	
 	ol,
 		.numbered{
 		    list-style:decimal outside;
