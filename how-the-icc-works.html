@@ -23,6 +23,8 @@
  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="assets/build/jquery-1.10.2.min.js"><\/script>')</script>	
 
+  <script src="assets/build/tinynav.min.js"></script>
+
 <!-- CSS -->
 <link rel="stylesheet" href="assets/build/icc-alpha.css" />
 
@@ -34,9 +36,11 @@
 	<header class="story-lede"> 
 		<h1>How the Court works</h1>
 		<p class="lede">The International Criminal Court (ICC) investigates, prosecutes and tries individuals accused of committing the gravest crimes of concern to the international community: <a href="#genocide">genocide</a>, <a href="#crimes">crimes against humanity</a> and <a href="#war-crimes">war crimes</a>.</p>
+		<span class="hide-mobile">
 		<p class="lede">It was established in 2002 by a treaty called the <a href="#">Rome Statute</a>. This treaty sets out the crimes falling within the ICC’s jurisdiction, the rules of procedure and how states cooperate with the ICC.</p>
 		<p class="lede"><a href="#states-parties">Over 120 countries have signed this treaty and become “States Parties” to the Rome Statute.</a> States Parties support the Court, accept the ICC’s jurisdiction, and also work to incorporate the treaty’s laws into their own judicial systems.</p>
 		<p class="lede">The ICC is an independent, judicial organisation composed of judges and staff from around the world. It is a permanent international court and not part of the UN system. Its headquarters are in The Hague and it has <a href="#">field offices</a> in several countries where the Court is conducting investigations.</p>
+		</span>
 
 		<p class="background italic">Note: The following is an example of the types of proceedings before the ICC. Not all cases follow this order and some cases are far more complex.</p> 
 
@@ -47,19 +51,19 @@
 	<div style="clear: both;"></div>
 
 	<nav class="nav-side big-line" id="side-menu">
-			<ul class="nav  nav--stacked">
+			<ul class="nav  nav--stacked" id="nav">
 				<li class="clean"><a href="#section1">1. Why and how a case starts</a></li>
-                                <li class="clean"><a href="#section2">2. Preliminary examination</a></li>
-                                <li class="clean"><a href="#section3">3. Warrant of arrest or summons to appear</a></li>
-                                <li class="clean"><a href="#section4">4. Cooperation</a></li>
-                                <li class="clean"><a href="#section5">5. Investigations</a></li>
-                                <li class="clean"><a href="#section6">6. Arrest</a></li>
-                                <li class="clean"><a href="#section7">7. Confirmation of charges</a></li>
-                                <li class="clean"><a href="#section8">8. Protection of witnesses and participation of victims</a></li>
-                                <li class="clean"><a href="#section9">9. The trial</a></li>
-                                <li class="clean"><a href="#section10">10. Judgment and sentence</a></li>
-                                <li class="clean"><a href="#section11">11. Final appeals and review</a></li>
-                                <li class="clean"><a href="#section12">12. Reparation for victims</a></li>
+                <li class="clean"><a href="#section2">2. Preliminary examination</a></li>
+                <li class="clean"><a href="#section3">3. Warrant of arrest or summons to appear</a></li>
+                <li class="clean"><a href="#section4">4. Cooperation</a></li>
+                <li class="clean"><a href="#section5">5. Investigations</a></li>
+                <li class="clean"><a href="#section6">6. Arrest</a></li>
+                <li class="clean"><a href="#section7">7. Confirmation of charges</a></li>
+                <li class="clean"><a href="#section8">8. Protection of witnesses and participation of victims</a></li>
+                <li class="clean"><a href="#section9">9. The trial</a></li>
+                <li class="clean"><a href="#section10">10. Judgment and sentence</a></li>
+                <li class="clean"><a href="#section11">11. Final appeals and review</a></li>
+                <li class="clean"><a href="#section12">12. Reparation for victims</a></li>
 			</ul>	
 	</nav>
 
@@ -517,6 +521,7 @@
 	
 	<script src="assets/build/icc-alpha.min.js"></script>	
 	<script src="assets/build/bootstrap.js"></script>
+	
 
 	<script>
 		$('#side-menu').affix({
@@ -525,8 +530,13 @@
       }
 });	
 
-
 	</script>
+
+	<script>
+  $(function () {
+    $("#nav").tinyNav();
+  });
+</script>
 
 </body>
 </html>
