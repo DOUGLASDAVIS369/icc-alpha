@@ -28,7 +28,6 @@
 #nav { 
 	@include respond-to(mobile) {
 		display: none; 
-		z-index: 100;
 	}
 }
 
