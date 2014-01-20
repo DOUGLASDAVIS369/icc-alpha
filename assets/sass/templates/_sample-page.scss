@@ -1,5 +1,11 @@
 .post {
 	@include gs-span(d, 1, 8);
+
+	@include respond-to(mobile) {
+		clear: both;
+		@include gs-span(m, all);
+	}
+
 }
 
 .box {		
