@@ -180,3 +180,27 @@
 	color: white;
 	padding: $base-spacing-unit/2;
 }
+
+.icc-tile {
+    float: left;
+    margin-right: 1em;
+    min-height: 8em;
+    padding: 2em;
+    width: 10em;
+    background: none repeat scroll 0 0 #F2F2F2;
+    border-radius: 0.25em;
+    @include transition(color, 0.5s, ease-out);
+    @include transition(background, 0.5s, ease-out);
+}
+
+.icc-tile-counter {
+    text-align: center;
+}
+
+.icc-tile:hover {
+	background: none repeat scroll 0 0 #6699cc;
+	color: $white;
+	display: block;
+}
+
+
