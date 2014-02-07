@@ -24,7 +24,10 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/build/icc-alpha-old-ie.css.css" /><![endif]-->
 
 		<!--[if IE]><script src="/assets/build/html5.js"></script><![endif]-->
-		
+
+		 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/build/jquery-1.10.2.min.js"><\/script>')</script>	
+
 	</head>
 	<body>
 		<div class="wrapper">	
@@ -60,7 +63,78 @@
 }
 </pre>
 
+
+<div class="bio-box">
+
+<h3>Trial Chamber I</h3>
+<ol class="no-number"><li>Judge Adrian Fulford, Presiding Judge</li>
+<li>Judge Elizabeth Odio Benito</li>
+<li>Judge René Blattmann</li></ol>
+
+<a class="view-all" id="view-all" href="#">view all</a>
+
+<span class="show-hide">
+<h3>Representation of the Office of the Prosecutor</h3>
+<ol class="no-number"><li>Fatou Bensouda, Prosecutor</li></ol>
+
+<h3>Defence Counsel for Thomas Lubanga Dyilo</h3>
+<ol class="no-number"><li>Catherine Mabille</li>
+<li>Jean-Marie Biju-Duval</li>
+<li>Marc Desalliers</li></ol>
+
+<h3>Legal Representatives of the Victims</h3>
+<ol class="no-number"><li>Franck Mulenda</li> 
+<li>Luc Walleyn</li>
+<li>Carine Bapita Buyangandu</li>
+<li>Joseph Keta Orwinyo</li> 
+<li>Paul Kabongo Tshibangu</li></ol>
+
+<h3>Office of Public Counsel for Victims</h3> 
+<ol class="no-number"><li>Paolina Massidda, Principal Counsel</li></ol> 
+</span>
+
+</div>	
+<br><br>
+<pre>
+
+
+.bio-box {
+	background: none repeat scroll 0 0 #F5F5F5;
+	padding: 1.5em;
+}
+
+.view-all:after {
+    content: " ▼";
+    display: inline-block;
+    font-size: 8px;
+    height: 8px;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
+.view-all-close:after {
+	content: " ▲";
+}
+
+.show-hide {
+	display:none;
+}
+
+</pre>
+
 		</div><!-- wrapper -->	
 	</body>
 	<script src="assets/build/icc-alpha.min.js"></script>	
+
+	<script>
+
+	$(document).ready(function() {
+        $('#view-all').click(function() {
+                $('.show-hide').slideToggle("fast");
+                $('.view-all').toggleClass('closed');
+                 return false;
+        });
+    });
+
+	</script>
 </html>
