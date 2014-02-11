@@ -35,10 +35,7 @@
   <script>window.jQuery || document.write('<script src="assets/build/jquery-1.10.2.min.js"><\/script>')</script>	
 
 
-<script type="text/javascript" src="timeline/compiled/js/storyjs-embed.js"></script>
-
-
-		 <script>	
+<script>	
 
             $(document).ready(function() {
                createStoryJS({
@@ -55,6 +52,10 @@
 
 
         </script>
+
+
+    <script type="text/javascript" src="timeline/compiled/js/storyjs-embed.js"></script>
+		 
 
 </head>
 
@@ -304,22 +305,16 @@
 	<script>
 				
 		function goToTime(type,value) {
+    var model = storyjs_jsonp_data.timeline.date;
+    $(model).each(function(i,j) {
+        var currentDate = j.startDate.split(',');
+        if (currentDate[type] == value ) {
+            window.location.hash = i;
+        } 
+    });
+}
 
-        var model = storyjs_jsonp_data.timeline.date;
-        var x = -1; //
-        $(model).each(function(i,j) {
-            var currentDate = j.startDate.split(',');
-            if (currentDate[type] == value ) {
-                x++;
-                if (x == 0) {
-                window.location.hash = i+1 // +1 to accommodate title slide count 
-            
-                }
-            } 
-        });     
-    }
-
-			var el = document.getElementById('goto15');
+		var el = document.getElementById('goto15');
 			el.onclick = gotTo15;
 
 			function gotTo15() {
