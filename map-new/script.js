@@ -37,8 +37,8 @@ var map = L.mapbox.map('map', 'robertocarroll.h8bm676d', {
 // 1 = Situations under investigation
 
 function getColor(d) {
-     return d == 3 ? '#6699cc' :
-           d == 2   ? '#A9A0A5' :
+     return d == 3 ? '#6699CC' :
+           d == 2   ? '#AABFD4' :
                       '#00275D';
 }
 
@@ -84,7 +84,7 @@ function onEachFeature(feature, layer) {
 
 // Listen for individual marker clicks
 function zoomToFeature(e) {
-    map.fitBounds(e.target.getBounds());
+    map.fitBounds(e.target.getBounds());    
 }
 
 
