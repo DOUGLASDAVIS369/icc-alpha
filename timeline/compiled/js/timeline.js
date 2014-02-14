@@ -7103,6 +7103,13 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
 			} else {
 				goToEvent(parseInt(hash));
 			}
+			
+			var that = this;
+$(window).bind( 'hashchange', function(e) {
+var new_hash_slide = location.hash.slice(1);
+that.setSlide(new_hash_slide);
+VMM.Timeline.Config.current_slide = new_hash_slide;
+});
 		}
 		
 		/* CREATE CONFIG
