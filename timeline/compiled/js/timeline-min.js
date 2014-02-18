@@ -5223,13 +5223,6 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 			goToSlide(n);
 		};
 
-		var change_slide = this;
-		$(window).bind( 'hashchange', function(e) {
-		    var new_hash_slide = location.hash.slice(1);
-		    change_slide.setSlide(new_hash_slide);
-		    VMM.Timeline.Config.current_slide = new_hash_slide; 
-		   
-		});
 
 		
 		/* ON EVENT
@@ -5817,6 +5810,8 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 			
 		}
 		
+
+
 		/* BUILD
 		================================================== */
 		function build() {
@@ -6161,6 +6156,7 @@ if (typeof VMM.Slider != 'undefined') {
 	}
 	
 };
+
 
 
 /* **********************************************
@@ -6629,6 +6625,8 @@ Utf8.decode = function(strUtf) {
   return strUni;
 }
 
+
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 /* **********************************************
@@ -6959,6 +6957,8 @@ if(typeof VMM != 'undefined' && typeof VMM.StoryJS == 'undefined') {
 /* Timeline
 ================================================== */
 
+
+
 if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
 	
 	VMM.Timeline = function(_timeline_id, w, h) {
@@ -7103,6 +7103,8 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
 			 	 config.current_slide	=	parseInt(hash);
 			 }
 		}
+
+
 		
 		window.onhashchange = function () {
 			var hash					=	window.location.hash.substring(1);
@@ -7116,15 +7118,25 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
 				goToEvent(parseInt(hash));
 			}
 
-
 		}
 
+			/* Rob - Add extra code here - https://github.com/NUKnightLab/TimelineJS/issues/295 
+		================================================== 	*/
 
+		$(window).bind( 'hashchange', function(e) {
+			is_moving = true;
+		    var new_hash_slide = location.hash.slice(1);
+		    slider.setSlide(new_hash_slide);
+		    config.current_slide = new_hash_slide; 
+		    timenav.setMarker(config.current_slide, config.ease,config.duration);
+		});	
 
-
+	
 		
 		/* CREATE CONFIG
 		================================================== */
+
+
 		function createConfig(conf) {
 			
 			// APPLY SUPPLIED CONFIG TO TIMELINE CONFIG
@@ -7310,6 +7322,9 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
 			}
 
 		}
+
+
+
 		
 		/* ORIENTATION
 		================================================== */
@@ -7649,6 +7664,8 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
 	VMM.Timeline.Config = {};
 	
 };
+
+
 
 /* **********************************************
      Begin VMM.Timeline.TimeNav.js
