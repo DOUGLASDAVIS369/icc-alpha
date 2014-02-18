@@ -5222,6 +5222,15 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 		this.setSlide = function(n) {
 			goToSlide(n);
 		};
+
+		var change_slide = this;
+		$(window).bind( 'hashchange', function(e) {
+		    var new_hash_slide = location.hash.slice(1);
+		    change_slide.setSlide(new_hash_slide);
+		    VMM.Timeline.Config.current_slide = new_hash_slide; 
+		   
+		});
+
 		
 		/* ON EVENT
 		================================================== */
@@ -6983,6 +6992,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
 		} else {
 			timeline_id		= "#timelinejs";
 		}
+
 		
 		
 		/* CONFIG
@@ -7109,13 +7119,9 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
 
 		}
 
-		var that = this;
-			$(window).bind( 'hashchange', function(e) {
-				var new_hash_slide = location.hash.slice(1);
-				that.setSlide(new_hash_slide);
-				VMM.Timeline.Config.current_slide = new_hash_slide;
-		});
-		
+
+
+
 		
 		/* CREATE CONFIG
 		================================================== */
@@ -7198,6 +7204,9 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
 		
 		/* ON EVENT
 		================================================== */
+
+
+		
 
 		function onDataReady(e, d) {
 			trace("onDataReady");
@@ -7388,6 +7397,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
 			slider.setSlide(0);
 			timenav.setMarker(0, config.ease,config.duration);
 		};
+
 
 
 		
@@ -9282,6 +9292,8 @@ if(typeof VMM.Timeline != 'undefined' && typeof VMM.Timeline.TimeNav == 'undefin
     TIMELINE SOURCE DATA PROCESSOR
 ================================================== */
 
+
+
 if (typeof VMM.Timeline !== 'undefined' && typeof VMM.Timeline.DataObj == 'undefined') {
 	VMM.Timeline.DataObj = {
 		data_obj: {},
@@ -10051,4 +10063,6 @@ if (typeof VMM.Timeline !== 'undefined' && typeof VMM.Timeline.DataObj == 'undef
 	
 	};
 	
+
+
 }
