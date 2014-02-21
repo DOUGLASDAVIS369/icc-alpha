@@ -1,5 +1,11 @@
 .post {
 	@include gs-span(d, 1, 8);
+
+	@include respond-to(mobile) {
+		clear: both;
+		@include gs-span(m, all);
+	}
+
 }
 
 .box {		
@@ -55,3 +61,30 @@
 	font-size: $milli-size;
 	text-align: center;
 }
+
+.bio-box {
+	background: none repeat scroll 0 0 #F5F5F5;
+	padding: 1.5em;
+}
+
+.view-all:after {
+    content: " ▼";
+    display: inline-block;
+    font-size: 8px;
+    height: 8px;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
+.closed:after {
+	content: " ▲";
+}
+
+.show-hide {
+	display:none;
+}
+
+ol.no-number {
+  	 padding-left: 24px;
+  	 list-style-type: none;
+ }   

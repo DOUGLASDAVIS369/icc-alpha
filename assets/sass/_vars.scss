@@ -30,7 +30,7 @@ $use-nav:           true;
 $use-options:       false;
 $use-pagination:    false;
 $use-breadcrumb:    true;
-$use-media:         false;
+$use-media:         true;
 $use-marginalia:    true;
 $use-island:        false;
 $use-block-list:    false;
@@ -122,12 +122,11 @@ $highlight-colour: $grey-4;       // Table stripes etc.
 $page-colour: $white;             // The page
 
 
-
 /**
  * Responsive sizes
  */
 
-$break-mobile: 480px;
+$break-mobile: 767px;
 $break-tablet: 768px;
 $break-desktop: 1100px;
 $break-bigscreen: 1300px;

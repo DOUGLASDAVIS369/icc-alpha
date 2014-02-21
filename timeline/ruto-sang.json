@@ -1,0 +1,73 @@
+
+{
+    "timeline":
+    {
+        "headline":"The Prosecutor v. William Samoei Ruto and Joshua Arap Sang",
+        "type":"default",
+		"text":" ",
+		"startDate":"2009,11,5",
+        "date": [
+        {   
+                "startDate":"2009,11,5",
+                "headline":"OTP opens investigation",
+                "text":"The ICC Prosecutor notifies the President of the Court of his intention to submit a request for authorisation to start an investigation into the situation in Kenya pursuant to article 15(3) of the Rome Statute, in regard to the 2007-2008 post-election violence in Kenya, in which approximately 1300 people were allegedly killed."
+            },
+			{
+                "startDate":"2009,11,6",
+                "headline":"Situation assigned to Pre-Trial Chamber II",
+                "text":"The Presidency of the Court assigns the situation to Pre-Trial Chamber II, composed of Judge Ekaterina Trendafilova (presiding judge), Judge Hans-Peter Kaul and Judge Cuno Tarfusser."
+            },
+             {
+                "startDate":"2010,3,31",
+                "headline":"Request to open an investigation granted",
+                "text":"Pre-Trial Chamber II grants, by majority, the Prosecution’s request to open an investigation into alleged crimes against humanity in Kenya. The investigation covers crimes against humanity committed between 1 June 2005 (the date of the Rome Statute’s entry into force for Kenya) and 26 November 2009 (the date the Prosecutor’s filed the request for authorisation to start the investigation)."
+            },
+             {
+                "startDate":"2010,12,15",
+                "headline":"Summonses to appear",
+                "text":"The ICC Prosecutor requests Pre-Trial Chamber II of the ICC to issue summonses to appear for six Kenyans on the basis that there existed reasonable grounds to believe that they were criminally responsible for crimes against humanity."
+            },
+             {
+                "startDate":"2011,03,8",
+                "headline":"Pre-Trial Chamber decision",
+                "text":"Pre-Trial Chamber II, by majority, issues the decisions on the applications submitted by the Prosecutor and summoned William Samoei Ruto, Henry Kiprono Kosgey and Joshua Arap Sang to appear before the Court on 7 April 2011."
+            },
+             {
+                "startDate":"2011,03,31",
+                "headline":"Government of Kenya files application challenging admissibility",
+                "text":"The Government of Kenya files an application challenging the admissibility of the case before the ICC."
+            },
+             {
+                "startDate":"2011,04,7",
+                "headline":"Summonses to appear",
+                "text":"At the initial appearance hearing, the Chamber schedules the confirmation of charges hearing in this case for 1 September 2011."
+            },
+             {
+                "startDate":"2011,05,31",
+                "headline":"Application by the Government of Kenya rejected",
+                "text":"Pre-Trial Chamber II rejects the application by the Government of Kenya. "
+            },
+             {
+                "startDate":"2011,08,30",
+                "headline":"Appeals Chamber confirms decision",
+                "text":"The Appeals Chamber confirms the Pre-Trial Chamber II’s decision."
+            },
+             {
+                "startDate":"2011,09,1",
+                "endDate":"2011,09,8",
+                "headline":"Confirmation of charges and committal for trial",
+                "text":"The confirmation of charges hearing is held from 1 to 8 September 2011."
+            },
+             {
+                "startDate":"2012,01,23",
+                "headline":"Charges confirmed",
+                "text":"The Judges declines to confirm the charges against Mr Kosgey. Pre-Trial Chamber II confirms the charges against Mr Ruto and Mr Sang and commits them to trial before an ICC Trial Chamber."
+            },
+             {
+                "startDate":"2012,09,10",
+                "headline":"Start of trial",
+                "text":"The trial begins. The defendants are not in the custody of the Court. "
+            }
+        ]
+    }
+}

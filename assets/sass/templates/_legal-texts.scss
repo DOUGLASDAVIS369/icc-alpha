@@ -1,0 +1,42 @@
+.letters {
+	list-style-type: lower-alpha;
+}
+
+.roman {
+	list-style-type: lower-roman;
+}
+
+.contents {
+	display: block;
+	margin-left: $base-spacing-unit;
+}
+
+.big-section {
+	@extend .bold;
+	margin-left: 0;
+}
+
+.otp-report-header, .rome-statute-header {
+	padding-top: $base-spacing-unit;
+	padding-bottom: 3*$base-spacing-unit;
+}
+
+.long-text li {
+	padding-bottom: $base-spacing-unit;
+}
+
+.tight li {
+	padding-bottom: 0.25*$base-spacing-unit;
+}
+
+.long-text h2 {
+	padding-top: 1.5*$base-spacing-unit;
+}
+
+.long-text h3, .long-text h4 {
+	padding-top: 1.25*$base-spacing-unit;
+}
+
+.long-text h6 {
+	@extend .bold;
+}

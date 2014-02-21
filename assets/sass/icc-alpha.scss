@@ -25,15 +25,20 @@
 /**
  * Template-specific stuff
  */
-
+ 
+@import "templates/legal-texts";
 @import "templates/links";
 @import "templates/sample-page";
 @import "templates/timeline";
 @import "templates/typography";
+@import "templates/scroll";
+@import "templates/case";
+@import "templates/jquery.slidepanel";
 
 /**
  * Some initial styles and grids
  */
+
 
 body {
 	color: $black;

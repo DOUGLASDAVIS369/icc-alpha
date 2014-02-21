@@ -1,0 +1,99 @@
+body {
+  font-family: Georgia,Times,'Times New Roman',serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+#map { position:absolute; top:0; bottom:0; right:300px; left:0; }
+
+.header {
+  max-width:100%;
+  max-height:100%;
+}
+
+.leaflet-popup {
+    display: none !important; 
+}
+
+#info {
+      position:absolute; top: 0; right: 0;
+      bottom: 0; width: 260px; background:#EEEEEE; color: #333;
+      padding:20px;
+      border-left: 2px solid #e6e2db;
+  }
+
+#info p, #info li  { 
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+#info h1 { 
+   font-family: "ff-tisa-web-pro",Georgia,Times,'Times New Roman',serif;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.figure {
+  font-size: 24px;
+  line-height: 15px;
+  padding-bottom: 24px;
+  padding-right: 6px;
+}
+
+.caption {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+
+.embed-container { 
+  position: relative; 
+  padding-bottom: 56.25%; 
+  padding-top: 30px; 
+  height: 0; 
+  overflow: hidden; 
+  max-width: 100%; 
+  height: auto; 
+} 
+
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed 
+counter-reset: 
+  { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+    .my-legend ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: Georgia,Times,'Times New Roman',serif;
+      }
+ 
+    .my-legend ul.legend-labels li span {
+              height:9px; 
+              width: 10px;
+              display: inline-block;
+              line-height: 12px;
+              font-size: 12px;
+              vertical-align: middle;
+              margin-right: 6px;
+      }
+
+     .my-legend ul.legend-labels li {
+        float:left;
+          display:inline;
+           font-size: 12px;
+      }  
+            
+
+            
+
+            

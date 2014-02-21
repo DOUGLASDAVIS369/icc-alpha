@@ -4,10 +4,14 @@
 
 	
 	/*  Normal link */
-	a {color: $link-colour; text-decoration: underline; @include transition(color, 0.5s, ease-out);}
+	a {color: $link-colour; text-decoration: none; @include transition(color, 0.5s, ease-out);}
 	
+	.vco-storyjs a {color: $link-colour !important; text-decoration: none; @include transition(color, 0.5s, ease-out);}
+
 	/*  Hover over */	
 	a:hover, a:focus {color: darken( $light-blue, 5% ); text-decoration: underline;} 
+
+	.vco-storyjs a:hover, .vco-storyjs a:focus {color: darken( $light-blue, 5% ); text-decoration: underline;} 
 	
 	/*  Link that's been clicked on */
 	a:visited {}
