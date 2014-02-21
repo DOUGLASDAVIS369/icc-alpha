@@ -7120,18 +7120,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
 
 		}
 
-			/* Rob-added - Add extra code here - https://github.com/NUKnightLab/TimelineJS/issues/295 
-		================================================== 	*/
-
-		$(window).bind( 'hashchange', function(e) {
-
-		   var new_hash_slide = location.hash.slice(1);
-		    config.current_slide = new_hash_slide; 
-		    slider.setSlide(new_hash_slide);
-		    timenav.setMarker(config.current_slide, config.ease,config.duration);
-		  //  alert (config.current_slide);
-		});
-
+		
 
 		
 
