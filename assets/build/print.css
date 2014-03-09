@@ -1,5 +1,9 @@
 @media print {
 
+ .noprint {
+    display: none;
+    }
+
 .utility-container, .footer-container, .case-toc {
 	display: none;	
 }
@@ -13,8 +17,8 @@ body {
 	background-color: #fff;
 	line-height: 1.3;
 	width: 100%;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 @page {
@@ -56,6 +60,9 @@ $a:after > img {
    content: "";
 }
 
+  
+  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */ 
 
+   tr, img { page-break-inside: avoid; }
 
 }

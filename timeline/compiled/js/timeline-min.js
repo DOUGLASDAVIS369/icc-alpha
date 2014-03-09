@@ -2722,7 +2722,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Language == 'undefined') {
 			month_short: "mmm",
 			month: "mmmm yyyy",
 			full_short: "mmm d",
-			full: "mmmm d',' yyyy",
+			full: "d mmmm yyyy",
 			time_short: "h:MM:ss TT",
 			time_no_seconds_short: "h:MM TT",
 			time_no_seconds_small_date: "h:MM TT'<br/><small>'mmmm d',' yyyy'</small>'",
@@ -7121,7 +7121,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
 		}
 
 			/* Rob-added - Add extra code here - https://github.com/NUKnightLab/TimelineJS/issues/295 
-		================================================== 	*/
+		================================================== 	
 
 		$(window).bind( 'hashchange', function(e) {
 
@@ -7132,7 +7132,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
 		  //  alert (config.current_slide);
 		});
 
-
+*/
 		
 
 		

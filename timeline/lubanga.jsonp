@@ -28,7 +28,7 @@ storyjs_jsonp_data =
             {
                 "startDate":"2006,3,17",
                 "headline":"DRC authorites surrender accused to court",
-                "text":"The Congolese authorities surrender Mr Lubanga Dyilo, who is then detained at the Centre pénitentiaire et de rééducation de Kinshasa [Kinshasa Penitentiary and Re-education Centre], to the Court. He is then transferred to the Court’s Detention Centre in The Hague.",
+                "text":"The Congolese authorities surrender Mr Lubanga Dyilo, who is then detained at the <em>Centre pénitentiaire et de rééducation de Kinshasa</em> [Kinshasa Penitentiary and Re-education Centre], to the Court. He is then transferred to the Court’s Detention Centre in The Hague.",
                 "tag":"Trial"
 
             },   
@@ -41,7 +41,7 @@ storyjs_jsonp_data =
                 {
                     "media":"http://youtu.be/lNAkWGOZSEs",
                     "credit":"",
-                    "caption":"Caption text"
+                    "caption":" "
                 }
             }, 
             {
@@ -158,14 +158,14 @@ storyjs_jsonp_data =
             },
             {   
                 "startDate":"2011,8,25",
-                "headline":"Closing statements (Legal representatives of victims)",
+                "headline":"Closing statements (Legal Representatives of Victims)",
                 "text":" ",
                 "tag":"Victims",
                 "asset":
                 {
                     "media":"http://youtu.be/bd1BMPb40vA",
                     "credit":"",
-                    "caption":"Legal representatives of victims"
+                    "caption":"Legal Representatives of Victims"
                 }
             },
             {
@@ -184,7 +184,7 @@ storyjs_jsonp_data =
                 "startDate":"2012,7,10",
                 "headline":"Sentence",
                 "tag":"Key case developments",
-                "text":"Trial Chamber I sentences Thomas Lubanga Dyilo to a total period of 14 years of imprisonment, of which the period that he spent in the ICC custody shall be deducted. The defence is entitled to appeal the conviction within 30 days of receiving the French translation of the Judgment.<p><a href='http://www.icc-cpi.int/en_menus/icc/situations%20and%20cases/situations/situation%20icc%200104/related%20cases/icc%200104%200106/court%20records/chambers/trial%20chamber%20i/Pages/2901.aspx'>See Decision on Sentence pursuant to Article 76 of the Statute </a></p>"
+                "text":"Trial Chamber I sentences Thomas Lubanga Dyilo to a total period of 14 years of imprisonment, of which the period that he spent in the ICC custody shall be deducted. The Defence is entitled to appeal the conviction within 30 days of receiving the French translation of the Judgment.<p><a href='http://www.icc-cpi.int/en_menus/icc/situations%20and%20cases/situations/situation%20icc%200104/related%20cases/icc%200104%200106/court%20records/chambers/trial%20chamber%20i/Pages/2901.aspx'>See Decision on Sentence pursuant to Article 76 of the Statute </a></p>"
             },
              {
                 "startDate":"2012,8,7",
