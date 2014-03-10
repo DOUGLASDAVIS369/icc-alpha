@@ -1,0 +1,97 @@
+<html>
+<head>
+  <title>Tabs example</title>
+  <script src="assets/build/jquery-1.7.1.min.js" type="text/javascript"></script> 
+  <script src="assets/build/jquery.hashchange.min.js" type="text/javascript"></script>
+  <script src="assets/build/jquery.easytabs.min.js" type="text/javascript"></script>
+
+  <style>
+    .etabs { 
+      margin: 0; 
+      padding: 0;  
+      border-bottom: 1px solid #DDDDDD; 
+      margin-bottom: 15px;
+    }
+    
+    .etabs > li {
+      margin-bottom: -1px;
+    }
+
+    .tab { 
+        display: inline-block; 
+        zoom:1; *display:inline; 
+
+    }
+   
+    .tab a { 
+      display: block; 
+      padding: 10px; 
+      outline: none; 
+      text-decoration: none;
+      border-radius: 4px 4px 0 0;
+
+    }
+   
+    .tab a:hover { 
+      border-color: #EEEEEE #EEEEEE #DDDDDD; 
+      background-color: #F2F2F2;
+    }
+   
+  .etabs > li.active > a, 
+  .etabs > li.active > a:hover, 
+  .etabs > li.active > a:focus {
+      background-color: #FFFFFF;
+      border-color: #DDDDDD #DDDDDD rgba(0, 0, 0, 0);
+      border-image: none;
+      border-style: solid;
+      border-width: 1px;
+      color: #555555;
+      cursor: default;
+}
+
+  
+
+    .panel-container { margin-bottom: 10px; }
+
+
+  </style>
+
+  <script type="text/javascript">
+    $(document).ready( function() {
+      $('#tab-container').easytabs();
+    });
+  </script>
+</head>
+<body>
+
+<div id="tab-container" class='tab-container'>
+ <ul class='etabs'>
+   <li class='tab'><a href="#ongoing">Ongoing Preliminary Investigations</a></li>
+   <li class='tab'><a href="#closed">Closed with decision not to investigate</a></li>
+   <li class='tab'><a href="#completed">Completed with decision to investigate</a></li>
+ </ul>
+ 
+ <div class='panel-container'>
+
+          <div id="ongoing">
+
+             Ongoing list
+          
+          </div>
+   
+           <div id="closed">
+
+            Closed list
+          
+          </div>
+          
+          <div id="completed">
+
+              Completed list
+
+          </div>
+ </div>
+</div>
+
+</body>
+</html>
