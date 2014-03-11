@@ -29,7 +29,58 @@
 		list-style: none outside none;
     	margin-left: 0px;
 	}
+
+.site-tagline {
+	font-weight: 400;
+	font-size: 1em;
+    line-height: 1.2em;
+}
+
+.home-menu-wrapper {
+	 border-bottom: 2px solid #000000;
+	 width: 100%;
+}
 	
+.home-menu {
+  list-style: none;
+  margin-left: 0;
+  font-family: "ff-tisa-web-pro",Georgia,Times,'Times New Roman',serif;
+
+}
+
+.home-menu > li,
+.home-menu > li > a {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  
+}
+
+.home-menu > li > a {
+	padding-right: 16px;
+
+}
+
+@media screen and (max-width: 960px) {
+		
+	.home-menu > li {
+	  display: list-item;
+	}
+
+	.home-menu > li > a {
+	  display: block;
+	  padding: 8px;
+	}
+
+	.row.banner {
+    	padding: 1.5em 2em 0.5em 2em !important;
+	}
+
+ 	.site-tagline {
+ 		padding-top: 8px;
+		font-size: 0.7em;
+	}
+}
 
 </style>	
 
@@ -41,6 +92,36 @@
 	<div role="main" class="col wide content-main">
 								
 	<div class="page-content">
+
+	<div class="row banner">						
+	
+	<div class="col half padded-right">
+	<h1 class="site-title">
+		<span id="Custom_Logo">
+			<a href="http://sharepoint13vm.cloudapp.net/sites/icc/"><img alt="International Criminal Court" src="http://sharepoint13vm.cloudapp.net/sites/icc/_catalogs/masterpage/icc/img/icc-logo.png?rev=3" id="ctl00_x63829de2201a4365a3904788f682d0a3"><span>International Criminal Court</span></a>
+		</span>
+	</h1>
+	</div>
+
+	<div class="col half padded-left">
+		<h2 class="site-tagline">Trying individuals for genocide, war crimes and crimes against humanity</h2>	
+	</div>
+	
+</div>													
+
+<div class="row">
+	<div class="col full home-menu-wrapper">
+	<ul class="home-menu">
+		<li class="active"><a href="#">Overview</a></li>
+		<li><a href="#">News and Summaries</a></li>
+		<li><a href="#">Court Records and Transcripts</a></li>
+		<li><a href="#">Key developments</a></li>
+		<li><a href="#">In the field</a></li>
+		<li><a href="#">Ask the Court</a></li>
+	</ul>
+</div>
+
+</div>	
 
 		<hr>	
 		
@@ -96,7 +177,7 @@
 						<ul class="more-list">
 						<li><a href="#">ICC at a Glance</a></li>
 						<li><a href="#">Understanding the ICC</a></li>
-						<li><a href="#">Fact Sheets and other publications</a></li>
+						<li><a href="#">Fact Sheets and Other Publications</a></li>
 						</ul>
 				</div>
 				
@@ -123,17 +204,28 @@
 				<h4><a href="#">Visit Us</a></h4>
 			</li>
 			<li class="carousel-item">
-				<a href="#"><img alt="Opening of the Day of International Criminal Justice, July 2011" src="assets/images/get-involved-raise.jpg" class="case-item-thumb"></a>
-				<h4><a href="#">Help Raise Awareness</a></h4>
+				<a href="#"><img alt="Opening of the Day of International Criminal Justice, July 2011" src="assets/images/get-involved-support.jpg" class="case-item-thumb"></a>
+				<h4><a href="#">Show Your Support: #StopViolenceAgainstWomen</a></h4>
 			</li>
+
+			<li class="carousel-item">
+				<a href="#"><img alt="Teach others" src="assets/images/get-involved-teach.jpg" class="case-item-thumb"></a>
+				<h4><a href="#">Teach others: Use these tools</a></h4>
+			</li>
+
+			<li class="carousel-item">
+				<a href="#"><img alt="Justice Matters" src="assets/images/get-involved-justice-matters.jpg" class="case-item-thumb"></a>
+				<h4><a href="#">View the ICC Exhibit Justice Matters and display it in your home country</a></h4>
+			</li>
+
 			<li class="carousel-item">
 				<a href="#"><img alt="Practice as a lawyer before the court" src="assets/images/get-involved-practice-lawyers.jpg" class="case-item-thumb"></a>
-				<h4><a href="#">Practice as a Lawyer Before the Court</a></h4>
+				<h4><a href="#">Lawyers: Apply to practice before the Court</a></h4>
 			</li>
 
 			<li class="carousel-item">
 				<a href="#"><img alt="Internship / visiting professionals" src="assets/images/get-involved-internships.jpg" class="case-item-thumb"></a>
-				<h4><a href="#">Internships and Visiting Professionals</a></h4>
+				<h4><a href="#">Apply to the Internship and Visiting Professionals Programme</a></h4>
 			</li>
 		</ul>
 	<ul class="ui-carousel-nav"><li class="ui-carousel-nav-prev"><a href="#previous"><span class="icon icon-arrow-left-thick"></span></a></li><li class="ui-carousel-nav-page ui-active"><a href="#0">1</a></li><li class="ui-carousel-nav-page"><a href="#1">2</a></li><li class="ui-carousel-nav-page"><a href="#2">3</a></li><li class="ui-carousel-nav-next"><a href="#next"><span class="icon icon-arrow-right-thick"></span></a></li></ul></div>
