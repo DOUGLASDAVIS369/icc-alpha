@@ -44,6 +44,15 @@
   padding-top: 30px;
 }
 
+.back-to-top {
+    font-size: 0.75em;
+
+}
+
+.back-to-top:after {
+    content: "↑";
+    padding-left: 5px;
+}
 
 /* Slide Panel */
         .cb_slide_panel {
