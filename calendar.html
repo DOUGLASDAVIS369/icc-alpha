@@ -1,0 +1,700 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Calendar</title>
+
+<style>
+#calendar{
+	overflow:auto;
+	width:63em;
+}
+.calendarNav {
+	padding:0;
+	margin:0 0 0.5em 0;
+}
+	
+.calendarNav ul {
+	list-style-type:none;
+	font-size:0.8em;
+	margin:0;
+	padding:0;
+}
+
+.calendarNav a {
+	text-decoration:none;
+	padding:1em;
+	float:left;
+	margin:0 0.3em 0 0;
+	background:#eee;
+	color:#036;
+}
+
+.calendarNav a:hover {
+	text-decoration:none;
+	background:#036;
+	color:#eee;
+	}
+
+.day {
+	padding:1em;
+	background:#eee;
+	width:10em;
+	cursor:pointer;
+	float:left;
+	margin:0.15em;
+}
+
+.day:hover {
+	background:#003366;
+	color:#eee;
+}
+
+.dayButton {
+	height:2.4em;
+}
+
+.dayTitle {
+	float:left;
+	margin-right:0.5em;
+}
+
+.dayTitle h1 {
+	font-weight:bold;
+	font-size:0.8em;
+	margin:0;
+}
+
+.dayTitle h2 {
+	font-weight:normal;
+	font-size:0.55em;
+	margin-top:0;
+}
+	
+.day-glance {
+	font-size:0.53em;
+	padding:0;
+	overflow:hidden;
+	
+}
+.day-glance ul {
+	margin:0;
+}
+
+.clear-all {
+	clear:both;
+	margin:0;
+	padding:0;
+}
+
+.day ul {
+	list-style-type:none;
+	padding:0;
+}
+
+.day-content {
+	margin:0;
+	padding:0;
+	}
+
+.dayCase {font-size:0.8em!important;}
+
+.caseName {
+	font-weight:bold!important;
+}
+
+.selected {
+	background:#036!important;
+	color:#eee!important;
+}
+
+#courtCalendar {
+	font-size:0.9em;
+	padding:0.8em;
+	margin:0;
+	padding:0;
+}
+	
+#courtCalendar h1 {
+	font-size:1em;
+	display:block;
+	background:#036;
+	color:#eee;
+	padding:0.5em;
+	margin:0;
+}
+	
+.courtCalendarDay {
+	float:left;
+	width:225px;
+	background:#eee;
+	padding:0;
+	margin:0 5px 0 0;
+}
+
+.courtCalendarDay ul{
+	list-style-type:none;
+	padding:0;
+	margin:10px;
+	
+	}
+
+@media all and (min-device-width : 320px) and (max-device-width : 480px) {
+
+body {
+	background:#ccc;
+	font-size:50px;
+}
+
+#calendar{
+	width:95%;
+}
+
+.day {
+	float:none;
+	width:90%;
+}
+
+
+#courtCalendar {
+	width:95%;
+	}
+	
+.courtCalendarDay {
+	float:none;
+	width:100%;
+}
+
+.courtCalendarDay ul {
+	margin:0 0 0.8em 0;}
+
+.hearingCR {
+	margin:0.8em;}
+
+
+}
+
+
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+$("div.nextWeek").hide();	
+
+$("div.day-content").hide();
+
+$("div.dayButton").click(function() {
+  $(this).siblings().slideToggle('fast');
+});
+
+$(function () {
+    var tabContainers = $('div.week > div');
+    
+    $('div.calendarNav ul.tabNavigation a').click(function () {
+        tabContainers.hide().filter(this.hash).show();
+        
+        $('div.calendarNav ul.tabNavigation a').removeClass('selected');
+        $(this).addClass('selected');
+        
+        return false;
+    }).filter(':first').click();
+});
+
+
+$(function(){
+	var cases = $.each('div.day li.caseName').Text();
+	$('div.day-glance ul').append("<li>"+cases+"</li>");	
+	});
+
+});
+</script>
+
+<link href="http://sharepoint13vm.cloudapp.net/sites/icc/_catalogs/masterpage/icc/style/main.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+<h1>Calendar page entry</h1>
+<div class="calendarNav">
+
+<ul class="tabNavigation">
+<li><a href="#thisWeek" class="selected">This Week</a></li>
+<li><a href="#nextWeek">Next Week</a></li>
+</ul>
+<br class="clear-all" />
+
+</div>
+
+<div id="calendar">
+
+<div class="week">
+<div id="thisWeek">
+
+<div class="day">
+
+<div class="dayButton">
+<div class="dayTitle"><h1>MONDAY</h1>
+<h2>10 MARCH 2014</h2>
+</div>
+
+<div class="day-glance"><ul><li>Ruto and Sang</li>
+<li>Kenyatta</li>
+<li>Banda</li></ul>
+</div>
+</div>
+
+<div class="day-content clear-all">
+
+<div class="hearingCR">
+
+
+<ul class="dayCase">
+<li class="caseName">Ruto and Sang</li>
+<li class="hearingdata">Courtroom I</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+
+<ul class="dayCase">
+<li class="caseName">Katanga</li>
+<li class="hearingdata">Courtroom I</li>
+<li class="hearingdata">17:00 - 18:00</li>
+<li class="hearingdata">Status conference</li>
+</ul>
+
+</div>
+
+<div class="hearingCR">
+
+<ul class="dayCase">
+<li class="caseName">Banda</li>
+<li class="hearingdata">Courtroom II</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+<div class="day">
+
+<div class="dayButton">
+<div class="dayTitle"><h1>TUESDAY</h1>
+<h2>11 MARCH 2014</h2>
+</div>
+
+<div class="day-glance"><ul><li>Ruto and Sang</li><li>Banda</li></ul>
+</div>
+</div>
+
+<div class="day-content clear-all">
+
+<div class="hearingCR">
+
+
+<ul class="dayCase">
+<li class="caseName">Ruto and Sang</li>
+<li class="hearingdata">Courtroom I</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+
+</div>
+
+<div class="hearingCR">
+
+<ul class="dayCase">
+<li class="caseName">Banda</li>
+<li class="hearingdata">Courtroom II</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+<div class="day">
+
+<div class="dayButton">
+<div class="dayTitle"><h1>WEDNESDAY</h1>
+<h2>12 MARCH 2014</h2>
+</div>
+
+<div class="day-glance"><ul><li>Ruto and Sang</li><li>Banda</li></ul>
+</div>
+</div>
+
+<div class="day-content clear-all">
+
+<div class="hearingCR">
+
+
+<ul class="dayCase">
+<li class="caseName">Ruto and Sang</li>
+<li class="hearingdata">Courtroom I</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+
+</div>
+
+<div class="hearingCR">
+
+<ul class="dayCase">
+<li class="caseName">Banda</li>
+<li class="hearingdata">Courtroom II</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+<div class="day">
+
+<div class="dayButton">
+<div class="dayTitle"><h1>THURSDAY</h1>
+<h2>13 MARCH 2014</h2>
+</div>
+
+<div class="day-glance"><ul><li>Ruto and Sang</li><li>Banda</li></ul>
+</div>
+</div>
+
+<div class="day-content clear-all">
+
+<div class="hearingCR">
+
+
+<ul class="dayCase">
+<li class="caseName">Ruto and Sang</li>
+<li class="hearingdata">Courtroom I</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+
+</div>
+
+<div class="hearingCR">
+
+<ul class="dayCase">
+<li class="caseName">Banda</li>
+<li class="hearingdata">Courtroom II</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+<div class="day">
+
+<div class="dayButton">
+<div class="dayTitle"><h1>FRIDAY</h1>
+<h2>14 MARCH 2014</h2>
+</div>
+
+<div class="day-glance"><ul><li>Ruto and Sang</li><li>Banda</li></ul>
+</div>
+</div>
+
+<div class="day-content clear-all">
+
+<div class="hearingCR">
+
+
+<ul class="dayCase">
+<li class="caseName">Ruto and Sang</li>
+<li class="hearingdata">Courtroom I</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+
+</div>
+
+<div class="hearingCR">
+
+<ul class="dayCase">
+<li class="caseName">Banda</li>
+<li class="hearingdata">Courtroom II</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div id="nextWeek">
+<div class="day">
+
+<div class="dayButton">
+<div class="dayTitle"><h1>MONDAY</h1>
+<h2>17 MARCH 2014</h2>
+</div>
+
+<div class="day-glance"><ul><li>Ruto and Sang</li><li>Kenyatta</li>
+<li>Banda</li></ul>
+</div>
+</div>
+
+<div class="day-content clear-all">
+
+<div class="hearingCR">
+
+
+<ul class="dayCase">
+<li class="caseName">Ruto and Sang</li>
+<li class="hearingdata">Courtroom I</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+
+
+<ul class="dayCase">
+<li class="caseName">Kenyatta</li>
+<li class="hearingdata">Courtroom I</li>
+<li class="hearingdata">17:00 - 19:00</li>
+<li class="hearingdata">Status Conference</li>
+</ul>
+
+</div>
+
+<div class="hearingCR">
+
+<ul class="dayCase">
+<li class="caseName">Banda</li>
+<li class="hearingdata">Courtroom II</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+<div class="day">
+
+<div class="dayButton">
+<div class="dayTitle"><h1>TUESDAY</h1>
+<h2>18 MARCH 2014</h2>
+</div>
+
+<div class="day-glance"><ul><li>Ruto and Sang</li><li>Banda</li></ul>
+</div>
+</div>
+
+<div class="day-content clear-all">
+
+<div class="hearingCR">
+
+
+<ul class="dayCase">
+<li class="caseName">Ruto and Sang</li>
+<li class="hearingdata">Courtroom I</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+
+</div>
+
+<div class="hearingCR">
+
+<ul class="dayCase">
+<li class="caseName">Banda</li>
+<li class="hearingdata">Courtroom II</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+<div class="day">
+
+<div class="dayButton">
+<div class="dayTitle"><h1>WEDNESDAY</h1>
+<h2>19 MARCH 2014</h2>
+</div>
+
+<div class="day-glance"><ul><li>Ruto and Sang</li><li>Banda</li></ul>
+</div>
+</div>
+
+<div class="day-content clear-all">
+
+<div class="hearingCR">
+
+
+<ul class="dayCase">
+<li class="caseName">Ruto and Sang</li>
+<li class="hearingdata">Courtroom I</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+
+</div>
+
+<div class="hearingCR">
+
+<ul class="dayCase">
+<li class="caseName">Banda</li>
+<li class="hearingdata">Courtroom II</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+<div class="day">
+
+<div class="dayButton">
+<div class="dayTitle"><h1>THURSDAY</h1>
+<h2>20 MARCH 2014</h2>
+</div>
+
+<div class="day-glance"><ul><li>Ruto and Sang</li><li>Banda</li></ul>
+</div>
+</div>
+
+<div class="day-content clear-all">
+
+<div class="hearingCR">
+
+
+<ul class="dayCase">
+<li class="caseName">Ruto and Sang</li>
+<li class="hearingdata">Courtroom I</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+
+</div>
+
+<div class="hearingCR">
+
+<ul class="dayCase">
+<li class="caseName">Banda</li>
+<li class="hearingdata">Courtroom II</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+<div class="day">
+
+<div class="dayButton">
+<div class="dayTitle"><h1>FRIDAY</h1>
+<h2>21 MARCH 2014</h2>
+</div>
+
+<div class="day-glance"><ul><li>Ruto and Sang</li><li>Banda</li></ul>
+</div>
+</div>
+
+<div class="day-content clear-all">
+
+<div class="hearingCR">
+
+
+<ul class="dayCase">
+<li class="caseName">Ruto and Sang</li>
+<li class="hearingdata">Courtroom I</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+
+</div>
+
+<div class="hearingCR">
+
+<ul class="dayCase">
+<li class="caseName">Banda</li>
+<li class="hearingdata">Courtroom II</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<h1>Home page Calendar entry</h1>
+
+<div id="courtCalendar">
+<div class="courtCalendarDay">
+<h1>Today in the Courtroom</h1>
+
+<div class="hearingCR">
+<ul class="dayCase">
+<li class="caseName">Banda</li>
+<li class="hearingdata">Courtroom II</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+</div>
+
+</div>
+<div class="courtCalendarDay">
+<h1>Upcoming Hearings</h1>
+
+<div class="hearingCR">
+<ul class="dayCase">
+<li class="caseName">Ruto and Sang</li>
+<li class="hearingdata">Courtroom I</li>
+<li class="hearingdata">17 March 2014</li>
+<li class="hearingdata">09:30 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+</div>
+
+<div class="hearingCR">
+<ul class="dayCase">
+<li class="caseName">Katanga</li>
+<li class="hearingdata">Courtroom I</li>
+<li class="hearingdata">17 March 2014</li>
+<li class="hearingdata">17:00 - 18:00</li>
+<li class="hearingdata">Status Conference</li>
+</ul>
+</div>
+
+<div class="hearingCR">
+<ul class="dayCase">
+<li class="caseName">Banda</li>
+<li class="hearingdata">Courtroom II</li>
+<li class="hearingdata">17 March 2014</li>
+<li class="hearingdata">09:00 - 16:00</li>
+<li class="hearingdata">Trial</li>
+</ul>
+</div>
+
+</div>
+
+
+
+</div>
+
+
+</body>
+</html>
