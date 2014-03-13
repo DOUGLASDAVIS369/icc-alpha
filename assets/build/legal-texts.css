@@ -8,10 +8,12 @@
 
 .letters {
   list-style-type: lower-alpha;
+
 }
 
 .roman {
   list-style-type: lower-roman;
+
 }
 
 .contents {
@@ -26,6 +28,11 @@
 .otp-report-header, .rome-statute-header {
   padding-top: 24px;
   padding-bottom: 72px;
+}
+
+.padding-below {
+    display: block;
+    padding-bottom: 48px;
 }
 
 .long-text li {
