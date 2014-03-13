@@ -23,6 +23,9 @@
 <script type="text/javascript" src="//use.typekit.net/ltx5lhb.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/build/jquery-1.10.2.min.js"><\/script>')</script>	
+
 <style>
 ul.more-list {
 	padding-left: 0px;
@@ -103,6 +106,19 @@ ul.more-list {
 <link href="http://sharepoint13vm.cloudapp.net/sites/icc/_catalogs/masterpage/icc/style/main.css" type="text/css" rel="stylesheet">
 
 	<body>
+
+		<nav role="navigation" class="row top-nav ui-spnav" style="display: block;">
+									<div id="DeltaTopNavigation">
+	
+										
+										<div class=" noindex ms-core-listMenu-horizontalBox" id="zz11_TopNavigationMenu">
+		<ul class="root ms-core-listMenu-root static" id="zz12_RootAspMenu">
+			<li class="static"><a accesskey="1" href="/sites/icc/shortcuts" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">SHORTCUTS</span></span></a></li><li class="static"><a href="/sites/icc/court-records" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Court Records</span></span></a></li><li class="static"><a href="/sites/icc/defendants" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Defendants</span></span></a></li><li class="static"><a href="/sites/icc/the-rome-statute" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">The Rome Statute</span></span></a></li><li class="static"><a href="/sites/icc/contact-us" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Contact us</span></span></a></li><li class="static"><a href="/sites/icc/jobs" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Jobs</span></span></a></li><li class="static"><a href="/sites/icc/sections" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">SECTIONS</span></span></a></li><li class="static"><a href="/sites/icc/about" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">About</span></span></a></li><li class="static"><a href="/sites/icc/investigation-and-cases" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Investigation and Cases</span></span></a></li><li class="static"><a href="/sites/icc/news" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">News</span></span></a></li><li class="static"><a href="/sites/icc/resource-library" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Resource Library</span></span></a></li><li class="static"><a href="/sites/icc/get-involved" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Get Involved</span></span></a></li><li class="static"><a href="/sites/icc/states-parties-to-the-icc-statute" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">States Parties to the ICC Statute</span></span></a></li>
+		</ul>
+	</div>
+									
+</div>
+								</nav>
 
 	<div role="main" class="col wide content-main">
 								
@@ -335,6 +351,28 @@ ul.more-list {
 		</div>
 		</div>	
 
+
+		<script>
+			var shortcuts = $("a[href='/sites/icc/shortcuts']");
+			$(shortcuts).parent().addClass("menu-heading");
+			$(shortcuts).contents().unwrap();
+
+			var section = $("a[href='/sites/icc/sections']");
+			$(section).parent().addClass("menu-heading");
+			$(section).contents().unwrap();
+
+		</script>
+
+		<style>
+
+			.menu-heading {
+				font-weight: 700;
+				padding-top:15px;
+				padding-left:15px;
+				padding-bottom: 3px;
+			}
+
+		</style>
 
 	</body>
 </html>
