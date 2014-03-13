@@ -10,6 +10,15 @@ html, body {
 
 #map { position:absolute; top:0; bottom:0; right:300px; left:0; }
 
+@media screen and (max-width: 960px) {
+
+  #map {
+   position:absolute; top:0; bottom:0; right:0; left:0;
+  }
+ 
+}
+
+
 .header {
   max-width:100%;
   max-height:100%;
@@ -25,6 +34,14 @@ html, body {
       padding:20px;
       border-left: 2px solid #e6e2db;
   }
+
+@media screen and (max-width: 960px) {
+
+  #info {
+   display: none;
+  }
+ 
+}  
 
 #info p, #info li  { 
   font-size: 14px;
@@ -94,6 +111,12 @@ counter-reset:
       }  
             
 
-            
+@media screen and (max-width: 960px) {
+
+  .my-legend {
+    display: none;
+  }
+
+}          
 
             
