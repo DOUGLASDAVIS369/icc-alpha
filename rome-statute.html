@@ -27,7 +27,7 @@
 <link href="http://sharepoint13vm.cloudapp.net/sites/icc/_catalogs/masterpage/icc/style/main.css" type="text/css" rel="stylesheet">
 
 <link rel="stylesheet" href="assets/build/legal-texts.css" />
-<link rel="stylesheet" href="assets/build/jquery.slidepanel.css" />
+ <link rel="stylesheet" href="assets/build/jquery.sidr.light.css">
 
  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="assets/build/jquery-1.10.2.min.js"><\/script>')</script>	
@@ -590,7 +590,15 @@
 <li>The application and interpretation of law pursuant to this article must be consistent with internationally recognized human rights, and be without any adverse distinction founded on grounds such as gender as defined in article 7, paragraph 3, age, race, colour, language, religion or belief, political or other opinion, national, ethnic or social origin, wealth, birth or other status.</li>
 </ol>
 
-<p><a href="rome-statute-slide.html" data-slidepanel="panel" class="button">Show related documents</a></p>
+<p><a href="#sidr" id="simple-menu" class="button">Show related documents</a></p>
+
+<div id="sidr">
+<h3>Article 21 - References</h3>
+
+<p>1. <a href="#">Situation in the DRC, "Judgement on the Prosecutor's Application for Extraordinary Review of Pre-Trial Chamber I's 31 March 2006 Decision Denying Leave to Appeal" 13 July 2006, ICC-01/04-168</a></p>
+
+<p>2. <a href="#">Prosecutor v. Thomas Lubanga Dyilo, "Judgment on the Appeal of Mr. Thomas Lubanga Dyilo against the Decision on the Defence Challenge to the Jurisdiction of the Court pursuant to article 19 (2) (a) of the Statute of 3 October 2006" 14 December 2006, ICC-01/04-01/06-772</a></p>
+</div>
 
 <a href="#top" class="back-to-top padding-below">Back to top</a> 
 
@@ -2246,14 +2254,12 @@
 </div>
 </div>
 
-<script src="assets/build/jquery.slidepanel.js"></script>
+<script src="assets/build/jquery.sidr.min.js"></script>
 
 <script type="text/javascript">
-      $(document).ready(function(){
-          $('[data-slidepanel]').slidepanel({
-
-          });
-      });
+      $(document).ready(function() {
+			$('#simple-menu').sidr();
+	});
 </script>
 
 </body>
