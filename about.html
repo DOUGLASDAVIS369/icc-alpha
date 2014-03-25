@@ -36,11 +36,11 @@ h1,h2,h3 {
     color: #3F3F3F;
 }
    
-.header-content {
+.white {
     color: #FFFFFF;
 }
 
-.header-content-sub {
+.light-grey {
   color: rgba(255, 255, 255, 0.65);
 }
 
@@ -56,26 +56,46 @@ section {
     padding: 4em 1em;
 }
 
+#intro3 {
+  background: #D4D4D4;
+}
+
+#facts {
+  background: #D4D4D4;
+}
+
+#legal-process {
+  background: #FBFBFB;
+}
+
+#states-parties {
+  background: url("assets/images/background-map.png") no-repeat fixed center center / contain #EAEEEF;
+}
+
+#trust-fund {
+  background: #FBFBFB;
+}
 
 .copy-width {
     margin: 0 auto;
     width: 662px;
 }
 
-.copy-width p.first-para:first-line {
-    color: #CC2F27;
-    font-size: 30px;
-    line-height: 150%;
+
+.tab-width {
+    clear: left;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 90%;
 }
 
-.copy-width p.first-para:first-letter {
-    color: #CC2F27;
-    float: left;
-    font-size: 175px;
-    line-height: 100%;
-    margin-right: 0.2em;
+hr {
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    content: "";
+    display: block;
+    margin: 1em auto 0;
+    width: 3em;
 }
-
 
 /*.site-width {
     clear: left;
@@ -95,8 +115,16 @@ section {
   text-align: center;
 }
 
+.clear {
+  clear:both;
+}
+
 .padding-top {
   padding-top: 24px;
+}
+
+.padding-top-double {
+  padding-top: 48px;
 }
 
 blockquote {
@@ -135,11 +163,11 @@ cite:before {
   content: "— ";
 }
 
-img.centered {
+img.centred {
     display: block;
     margin: 1em auto;
-    max-width: 15em;
-    width: 40%;
+    max-width: 20em;
+    width: 80%;
 }
 
 .big-image {
@@ -151,6 +179,53 @@ img.centered {
   display: block;
   text-align: center;
 }
+
+   .etabs { 
+      margin: 0; 
+      padding: 0;  
+      border-bottom: 1px solid #DDDDDD; 
+      margin-bottom: 15px;
+    }
+    
+    .etabs > li {
+      margin-bottom: -1px;
+    }
+
+    .tab { 
+        display: inline-block; 
+        zoom:1; *display:inline; 
+
+    }
+   
+    .tab a { 
+      display: block; 
+      padding: 10px; 
+      outline: none; 
+      text-decoration: none;
+      border-radius: 4px 4px 0 0;
+
+    }
+   
+    .tab a:hover { 
+      border-color: #EEEEEE #EEEEEE #DDDDDD; 
+      background-color: #F2F2F2;
+    }
+   
+  .etabs > li.active > a, 
+  .etabs > li.active > a:hover, 
+  .etabs > li.active > a:focus {
+      background-color: #FFFFFF;
+      border-color: #DDDDDD #DDDDDD rgba(0, 0, 0, 0);
+      border-image: none;
+      border-style: solid;
+      border-width: 1px;
+      color: #555555;
+      cursor: default;
+}
+
+    .panel-container { margin-bottom: 10px; }
+
+
 
 @media only screen and (max-width: 767px) {
     
@@ -204,6 +279,7 @@ img.centered {
 
 <body>
 
+
 <div class="big-image" data-viewport-height="" id="introduction">
 
   <script>
@@ -222,9 +298,9 @@ img.centered {
 
 		<div class="header-content-wrapper copy-width">
 		  
-			<h1 class="header-content">International Criminal Court</h1>
+			<h1 class="white">International Criminal Court</h1>
 		  
-		    <h2 class="header-content-sub">Trying individuals for genocide, war crimes and crimes against humanity</h2><p class="centre padding-top">Scroll down to continue</p><p class="centre"><a href="#"><img width="25" height="25" alt="Scroll down to continue" src="assets/images/scroll.png"></a></p>
+		    <h2 class="light-grey">Trying individuals for genocide, war crimes and crimes against humanity</h2><p class="centre padding-top light-grey">Scroll down to continue</p><p class="centre"><a href="#intro2"><img width="25" height="15" alt="Scroll down to continue" src="assets/images/down-arrow.png"></a></p>
 		  
 		</div>
 
@@ -269,8 +345,17 @@ img.centered {
 
 <blockquote>“This cause … is the cause of all humanity.”<p><cite>Former United Nations Secretary-General Kofi Annan</cite></p></blockquote>
 
+ <div class="site-width">
 
-<p>±±Watch: The ICC in 3 minutes [Video or narrated Prezi: 3-5 minute introduction to the Court]</p>
+    <div class="copy-width">
+
+        <p>±±Watch: The ICC in 3 minutes [Video or narrated Prezi: 3-5 minute introduction to the Court]</p>
+
+
+    </div>
+  </div>
+
+
 
 <section id="key-features">
 
@@ -280,17 +365,23 @@ img.centered {
 
       <h1 class="centre">Why the Court Matters</h1>
 
+      <img class="centred" src="assets/images/JusticeMattersSlideshow-32.jpeg" alt="A woman living in Kassab Camp in North Darfur" /> 
+
       <h2>Towards universal protection from atrocious crimes</h2>
       <p>Each State that ratifies or accedes to the Rome Statute offers protection to its citizens against the atrocious crimes genocide, war crimes and crimes against humanity, leading the Court closer to universal protection against these crimes.</p>
 
       <h2>Trials are fair</h2>
       <p>ICC judges ensure the fairness of proceedings, as they uphold the rights of defendants and maintain that the burden of proof lies with the Office of the Prosecutor.</p>
 
+      <img class="centred" src="assets/images/JusticeMattersSlideshow-ENG-74-28.jpg" alt="People flee heavy fighting near Bunia, DRC, in 2004" /> 
+
       <h2>Victim’s voices are heard</h2>
       <p>Victim’s voices are heard in the Courtroom, as the Rome Statute grants victims unprecedented rights to participation. Watch now.</p>
 
       <h2>Witnesses are protected</h2>
       <p>The ICC has a witness protection programme that uses both operational and procedural protective measures. Find out more.</p>
+
+      <img class="centred" src="assets/images/JusticeMattersSlideshow-ENG-51-5.jpg" alt="Former child soldier: Mario, 13, shows drawings from his fellow students and tells how they were abducted and used as child soldiers in the DRC." /> 
 
       <h2>Outreach ensures two-way dialogue</h2>
       <p>The Court engages in two-way dialogue directly with communities that have suffered from crimes under its jurisdiction. Learn more.</p>
@@ -320,13 +411,15 @@ img.centered {
       <p>In addition to founding the Court and defining the crimes of genocide, war crimes, crimes against humanity, and the crime of aggression (the latter expected to enter into force no sooner than 2017), the Rome Statute also sets new standards for victims’ representation in the Courtroom, and ensures fair trials and the rights of the defence. The Court seeks cooperation to protect all people from the crimes codified in the Rome Statute.</p>
       <p>Today, the treaty serves as the ICC’s guiding legal instrument, which is elaborated in such other legal texts as the Elements of Crimes, Rules of Procedure and Evidence and more. See all core legal texts.</p>
       <h2>Today the Court has:</h2>
-      <p>Over 120 States Parties to the Rome Statute.</p>
-      <p>Over 800 staff members: From approximately 100 States.</p>
-      <p>6 official languages: English, French, Arabic, Chinese, Russian and Spanish.</p>
-      <p>2 working languages: English and French.</p>
-      <p>Headquarters: The Hague, The Netherlands.</p>
-      <p>5 field offices: Kinshasa and Bunia (Democratic Republic of the Congo, “DRC”); Kampala (Uganda); Nairobi (Kenya), Abidjan (Côte d’Ivoire).</p>
-      <p>2014 budget: €121 million</p>
+      <ul>
+        <li>Over 120 States Parties to the Rome Statute.</li>
+        <li>Over 800 staff members: From approximately 100 States.</li>
+        <li>6 official languages: English, French, Arabic, Chinese, Russian and Spanish.</li>
+        <li>2 working languages: English and French.</li>
+        <li>Headquarters: The Hague, The Netherlands.</li>
+        <li>5 field offices: Kinshasa and Bunia (Democratic Republic of the Congo, “DRC”); Kampala (Uganda); Nairobi (Kenya), Abidjan (Côte d’Ivoire).</li>
+        <li>2014 budget: €121 million</li>
+      </ul>
       <p>ICC judges have issued 26 arrest warrants against 24 suspects. Thanks to cooperation from States, 8 persons have been detained in the ICC Detention Centre and have appearing before the Court. 13 persons remain at large. Charges have been dropped against 3 persons due to their deaths.</p>
       <p>ICC judges have also issued 9 summonses to appear, all of which have been respected by the suspects, who appeared voluntarily before the Court.</p>
       <p>The judges have issued 3 verdicts: 2 individuals have been found guilty and 1 has been acquitted. There have thus far been 21 cases before the Court, with some cases having more than one suspect.</p> 
@@ -335,39 +428,147 @@ img.centered {
     </div>
    </section> 
 
-   <section>
+   <section id="how-the-court-works">
         <div class="site-width">
 
         <div class="copy-width">
 
         <h1 class="centre">How the Court Works</h1>
         <p>What are the crimes that the Court addresses? The Court’s founding treaty, called the Rome Statute, grants the ICC jurisdiction over four main crimes.</p>
-        <p>First, the crime of genocide, which is a massive violation characterised by the specific intent to destroy a national, ethnic, racial or religious group by killing its members or other means. (See article 6 of the Rome Statute)</p>
-        <p>Second, the ICC can prosecute crimes against humanity, which are serious violations committed as part of a large-scale attack against any civilian population. The 15 forms of crimes against humanity listed in the Rome Statute include offences such as murder, rape, imprisonment, enforced disappearances, enslavement – particularly of women and children, sexual slavery, torture, apartheid and deportation. (See article 7 of the Rome Statute)</p>
-        <p>Third, War crimes which are grave breaches of the Geneva conventions and include, for instance, the use of child soldiers; the killing or torture of persons such as civilians or prisoners of war; intentionally directing attacks against hospitals, historic monuments, or buildings dedicated to religion, education, art, science or charitable purposes. (See article 8 of the Rome Statute)</p>
-        <p>Finally, the fourth crime falling within the ICC’s jurisdiction is the crime of aggression. An act of aggression being the use of armed force by a State against the sovereignty, integrity or independence of another State. At the time of the adoption of the Rome Statute, States could not agree on the definition of this crime, but this shortcoming was overcome by the adoption of amendments at the first Review Conference of the Statute in Kampala in 2010. Bringing these amendments into force will require ratifications and an additional vote by States Parties. This will not happen until 2017 at the earliest. (See article 8 bis of the Rome Statute)</p>
+        <h2>Genocide</h2>
+        <p>A massive violation characterised by the specific intent to destroy a national, ethnic, racial or religious group by killing its members or other means. (See <a href="#">article 6 of the Rome Statute</a>)</p>
+        <h2>Crimes against humanity</h2>
+        <p>Serious violations committed as part of a large-scale attack against any civilian population. The 15 forms of crimes against humanity listed in the Rome Statute include offences such as murder, rape, imprisonment, enforced disappearances, enslavement – particularly of women and children, sexual slavery, torture, apartheid and deportation. (See <a href="#">article 7 of the Rome Statute</a>)</p>
+        <h2>War Crimes</h2>
+        <p>Grave breaches of the Geneva conventions and include, for instance, the use of child soldiers; the killing or torture of persons such as civilians or prisoners of war; intentionally directing attacks against hospitals, historic monuments, or buildings dedicated to religion, education, art, science or charitable purposes. (See <a href="#">article 8 of the Rome Statute</a>)</p>
+        <h2>The crime of aggression</h2>
+        <p>An act of aggression being the use of armed force by a State against the sovereignty, integrity or independence of another State. At the time of the adoption of the Rome Statute, States could not agree on the definition of this crime, but this shortcoming was overcome by the adoption of amendments at the first Review Conference of the Statute in Kampala in 2010. Bringing these amendments into force will require ratifications and an additional vote by States Parties. This will not happen until 2017 at the earliest. (See <a href="#">article 8 bis of the Rome Statute</a>)</p>
         <p>[Link to Rome Statute and Elements of Crimes]</p> 
 
      </div> 
     </div>   
    </section>
 
-   <section> 
+   <section id="legal-process"> 
       <div class="site-width">
 
           <div class="copy-width">
 
-       <p>Legal Process: Example investigation and case from start to finish</p>
-        <p>After Crimes occur→  flow chart</p>
+        <h1 class="centre">Legal Process</h1>
+        <h2>Example investigation and case from start to finish</h2>
+
+      </div>
+        <div class="tab-width padding-top">
+        <div id="tab-container" class='tab-container'>
+             <ul class='etabs'>
+               <li class='tab'><a href="#preliminary-analysis">Preliminary analysis →</a></li>
+               <li class='tab'><a href="#investigations">Investigations →</a></li>
+               <li class='tab'><a href="#pre-trial">Pre-trial stage →</a></li>
+               <li class='tab'><a href="#trial">Trial stage →</a></li>
+               <li class='tab'><a href="#appeals">Appeals stage →</a></li>
+               <li class='tab'><a href="#verdict">Final Verdict</a></li>
+
+             </ul>
+             
+             <div class='panel-container'>
+
+                      <div id="preliminary-analysis" class="copy-width">
+
+                          <p>The Office of the Prosecutor must determine whether there is sufficient evidence of crimes of sufficient gravity falling within the ICC’s jurisdiction, and whether opening an investigation would serve the interests of justice and of the victims.</p>
+
+                          <p>X If the requirements are not met for initiating an investigation, or if the situation or crimes are not under the ICC’s jurisdiction, the ICC’s Prosecution cannot investigate. </p>
+
+                          <hr>
+                      
+                      </div>
+               
+                       <div id="investigations" class="copy-width">
+
+                        <p>After gathering evidence and identifying a suspect, the Prosecution requests ICC Judges to issue:</p>
+
+                        <ol>
+                          <li>an arrest warrant: The ICC relies on countries to make arrests and transfer suspects to the ICC</li> 
+                        OR 
+                          <li>a summons to appear: suspects appear voluntarily (if not, an arrest warrant may be issued).</li>
+                        </ol> 
+                        
+                        <p>X If the suspect is not arrested or does not appear, legal submissions can be made, but hearings cannot begin.</p>
+
+                        <hr>
+                      
+                      </div>
+                      
+                      <div id="pre-trial" class="copy-width">
+
+                          <p>1. Initial appearance: 
+                          Three Pre-trial judges confirm suspect's identity and ensure suspect understands the charges.</p>
+
+                          AND
+
+                          <p>2. Confirmation of charges hearings:
+                           
+                          After hearing the Prosecution, the Defence, and the Legal representative of victims, the judges decide (usually within 60 days) if there is enough evidence for the case to go to trial.</p>
+
+                          <p>X If there is not enough evidence, the judges can order the Prosecutor to provide more evidence or to amend the charges, or they can end the proceedings by rejecting all the charges.</p>
+
+                          <p>The Prosecution may seek again the confirmation of charges, presenting new evidence.</p>
+
+                          <hr>
+
+                      </div>
+
+                       <div id="trial" class="copy-width">
+
+                          <p>Before three Trial judges, the Prosecution must prove beyond reasonable doubt the guilt of the accused.</p> 
+
+                          <p>Judges consider all evidence, then issue a verdict and, when there is a verdict of guilt, issue a sentence.</p> 
+
+                          <p>Verdicts are subject to appeal by the Defence and by the Prosecutor.</p> 
+                          <p>Judges can also order reparations for the victims.</p>
+
+                          <p>X If there is not enough evidence, the case is closed and the accused is released.</p> 
+
+                          <p>Acquittals are subject to appeal by the Defence and by the Prosecutor.</p>
+
+                          <hr>
+
+                      </div>
+
+                      <div id="appeals" class="copy-width">
+
+                          <p>Five appeals judges review the verdict and can either confirm the decision, or reverse it, or send the case back to the trial stage.</p>
+
+                          <hr>
+
+                      </div>
+
+                       <div id="verdict" class="copy-width">
+
+                          <p>If a verdict of guilt is upheld, the convicted person must follow the orders in the judgment; the judges can sentence a person to up to 30 years of imprisonment, and under exceptional circumstances, a life sentence.</p>
+
+                          <p>Sentences are not served in The Netherlands but in other counties that have agreed to enforce sentences.  
+                          </p>
+
+                          <hr>
+
+                      </div>
 
 
-        <p>Jurisdiction</p>
+             </div>
+            </div>
+          </div>
+
+        <div class="copy-width">    
+
+        <h2 class="clear padding-top-double">Jurisdiction</h2>
         <p>The Court may exercise jurisdiction in a situation where war crimes, crimes against humanity or genocide were committed after 1 July 2002 and:</p>
         <p>the crimes were committed by a national or in the territory of a State Party or a State that has accepted the jurisdiction of the Court; or</p>
         <p>the crimes were referred to the ICC Prosecutor by the United Nations Security Council by a resolution adopted under chapter VII of the UN charter.</p>
-        <p>Complementarity</p>
+        
+        <h2>Complementarity</h2>
         <p>The ICC is intended to complement, not to replace, national criminal systems; it prosecutes cases only when States are unwilling or unable to do so genuinely.</p>
-        <p>Cooperation</p>
+        
+        <h2>Cooperation</h2>
         <p>As a judicial institution, the ICC does not have its own police force or enforcement body; thus, it relies on cooperation with countries worldwide for support, particularly for making arrests, transferring arrested persons to the ICC Detention Centre in The Hague, freezing suspects’ assets, and enforcing sentences.</p>
         <p>The ICC actively works to build understanding and cooperation in all regions, for example, through seminars and conferences worldwide. The Court cooperates with both States Parties and non-States Parties.</p>
         <p>The Court works in particularly close cooperation with its host state, the Netherlands, regarding practical matters such as constructing the Court’s new buildings, transferring suspects to the ICC Detention Centre, facilitating their appearances before the Court, and many other matters.</p>
@@ -379,7 +580,7 @@ img.centered {
     </div> 
    </section>
 
-   <section>
+   <section id="states-parties">
           <div class="site-width">
 
           <div class="copy-width">
@@ -391,13 +592,13 @@ img.centered {
         <p>Although the Court’s expenses are funded primarily by States Parties, it also receives voluntary contributions from governments, international organisations, individuals, corporations and other entities.</p>
         <p>While States Parties to the Rome Statute have an obligation to cooperate with the Court, cooperation also comes from countries that are not yet States Parties.</p>
         <p>“We have come far, but as we strive to end impunity for the most serious crimes of concern to the international community, we still have a long road ahead”. - President of the Assembly of States Parties to the Rome Statute Ambassador Tiina Intelmann</p>
-        <p>Learn more about the Assembly of States Parties here.</p>
+        <p><a href="#">Learn more about the Assembly of States Parties</a></p>
         
       </div> 
     </div>     
    </section> 
 
-   <section>
+   <section id="trust-fund">
          <div class="site-width">
 
           <div class="copy-width">
@@ -406,13 +607,13 @@ img.centered {
         <p>Though the Trust Fund for Victims is separate from the Court, it was created in 2004 by the Assembly of States Parties, in accordance with article 79 of the Rome Statute. The Trust Fund for Victims offers reparations and assistance to victims of crimes under the Court’s jurisdiction. With the help of voluntary donors, it offers physical rehabilitation, material support, and psychological rehabilitation to victims.</p>
         <p>The Trust Fund can also implement Court-ordered reparations, and raises funds necessary to comply with such Court orders in case the convicted person does not have sufficient resources to do so.</p>
         <p>[Insert photo slideshow with the following captions]</p>
-        <p>Prosthetics and other surgeries</p>
+        <h2>Prosthetics and other surgeries</h2>
         <p>In northern Uganda, the Trust Fund for Victims has provided prosthetic and orthotic devices and physiotherapy for victims of torture,</p>
         <p>mutilation, disfigurement, amputation, burns and other crimes against civilians.</p>
-        <p>Healing</p>
+        <h2>Healing</h2>
         <p>"God forgive me because my heart was preparing revenge against my executioner. Help me! How can I forgive? If I do not, I'll end up committing a crime</p>
         <p>in the future". - Shared testimonies by children from a peace school supported by the Trust Fund for Victims in Ituri, the DRC.</p>
-        <p>Education</p>
+        <h2>Education</h2>
         <p>Students supported by the Trust Fund for Victims attend a peace school in Ituri, DRC. Students work together to create stories about the underlying causes to the</p>
         <p>conflict and share messages for their communities.</p>
         <p>Watch Trust Fund video</p>
@@ -422,7 +623,15 @@ img.centered {
    </section>
     
 
+ <script src="assets/build/jquery-1.7.1.min.js" type="text/javascript"></script> 
+  <script src="assets/build/jquery.hashchange.min.js" type="text/javascript"></script>
+  <script src="assets/build/jquery.easytabs.min.js" type="text/javascript"></script>
 
+  <script type="text/javascript">
+    $(document).ready( function() {
+      $('#tab-container').easytabs();
+    });
+  </script>
 
 </body>
 </html>
