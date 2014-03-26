@@ -23,6 +23,8 @@
 
 <link href="http://sharepoint13vm.cloudapp.net/sites/icc/_catalogs/masterpage/icc/style/main.css" type="text/css" rel="stylesheet">
 
+<link rel="stylesheet" href="assets/build/jquery.sidr.light.css">
+
 
 <style>
 body {
@@ -51,6 +53,20 @@ h1,h2,h3 {
     position: absolute;
     right: 0;
 }
+
+.sidebar-nav-item {
+  display: block;
+  padding: .5rem 1rem;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+.sidebar-nav-item.active,
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: none;
+  background-color: rgba(255,255,255,.1);
+  border-color: transparent;
+}
+
 
 section {
     padding: 4em 1em;
@@ -226,6 +242,22 @@ img.centred {
     .panel-container { margin-bottom: 10px; }
 
 
+#sidenav {
+    z-index: 100;
+    font-size: 16px;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    text-transform: uppercase;
+
+}
+
+#sidenav-menu-button-wrap {
+    transform: rotate(-90deg);
+}
+
+
 
 @media only screen and (max-width: 767px) {
     
@@ -279,6 +311,24 @@ img.centred {
 
 <body>
 
+<div class="fixed trans" id="sidenav">  
+  <div class="trans" id="sidenav-menu-button-wrap">
+     <a href="#sidr" id="simple-menu" ><button class="app-menu-trigger transparent" id="sidenav-menu-button" data-gss-id="sidenav-menu-button" style="-moz-box-sizing: border-box; position: absolute; margin: 0px; top: 0px; left: 0px; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -255, 0, 0, 1); font-size: 16px;">Contents</button></a>
+  </div>  
+</div>
+
+
+<div id="sidr">
+  <button type="button" onclick="$.sidr('close', 'sidr');">Close</button>
+  <ul>
+          <li class="sidebar-nav-item"><a href="#our-goals">Our goals</a></li>
+          <li class="sidebar-nav-item"><a href="#facts">Facts and Figures</a></li>
+          <li class="sidebar-nav-item"><a href="#legal-process">Legal Process</a></li>
+          <li class="sidebar-nav-item"><a href="#states-parties">States Parties to the Rome Statute and Their Role</a></li>
+          <li class="sidebar-nav-item"><a href="#trust-fund">Trust Fund for Victims</a></li>
+
+  </ul>                      
+</div>
 
 <div class="big-image" data-viewport-height="" id="introduction">
 
@@ -357,13 +407,13 @@ img.centred {
 
 
 
-<section id="key-features">
+<section id="our-goals">
 
   <div class="site-width">
 
     <div class="copy-width">
 
-      <h1 class="centre">Why the Court Matters</h1>
+      <h1 class="centre">Our Goals</h1>
 
       <img class="centred" src="assets/images/JusticeMattersSlideshow-32.jpeg" alt="A woman living in Kassab Camp in North Darfur" /> 
 
@@ -634,6 +684,14 @@ img.centred {
       $('#tab-container').easytabs();
     });
   </script>
+
+<script src="assets/build/jquery.sidr.min.js"></script>
+
+<script type="text/javascript">
+      $(document).ready(function() {
+      $('#simple-menu').sidr();
+  });
+</script>
 
 </body>
 </html>
