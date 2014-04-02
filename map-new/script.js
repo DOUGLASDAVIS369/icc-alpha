@@ -26,6 +26,8 @@ var map = L.mapbox.map('map', 'robertocarroll.h8bm676d', {
     }
 });
 
+map.scrollWheelZoom.disable();
+
  var countryLayer = L.geoJson(countryData,  {
       style: getStyle, onEachFeature: onEachFeature
   }).addTo(map);
