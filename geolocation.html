@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Deferred look up country code via multiple geolocation webapis - jsFiddle demo by hippietrail</title>
+  
+  <script type='text/javascript' src='http://code.jquery.com/jquery-git.js'></script>
+
+
+  
+
+
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+(function($) {
+    $.reverseWhen = function(subordinate /* , ..., subordinateN */ ) {
+        var i = 0,
+            rejectValues = Array.prototype.slice.call(arguments),
+            length = rejectValues.length,
+
+            // the count of uncompleted subordinates
+            remaining = length !== 1 || (subordinate && jQuery.isFunction(subordinate.promise)) ? length : 0,
+
+            // the master Deferred. If rejectValues consist of only a single Deferred, just use that.
+            deferred = remaining === 1 ? subordinate : jQuery.Deferred(),
+
+            // Update function for both reject and progress values
+            updateFunc = function(i, contexts, values) {
+                return function(value) {
+                    contexts[i] = this;
+                    values[i] = arguments.length > 1 ? Array.prototype.slice.call(arguments) : value;
+                    if (values === progressValues) {
+                        deferred.notifyWith(contexts, values);
+                    } else if (!(--remaining)) {
+                        deferred.rejectWith(contexts, values);
+                    }
+                };
+            },
+
+            progressValues, progressContexts, rejectContexts;
+
+        // add listeners to Deferred subordinates; treat others as rejected
+        if (length > 1) {
+            progressValues = new Array(length);
+            progressContexts = new Array(length);
+            rejectContexts = new Array(length);
+            for (; i < length; i++) {
+                if (rejectValues[i] && jQuery.isFunction(rejectValues[i].promise)) {
+                    rejectValues[i].promise().done(deferred.resolve).fail(updateFunc(i, rejectContexts, rejectValues)).progress(updateFunc(i, progressContexts, progressValues));
+                } else {
+                    --remaining;
+                }
+            }
+        }
+
+        // if we're not waiting on anything, reject the master
+        if (!remaining) {
+            deferred.rejectWith(rejectContexts, rejectValues);
+        }
+
+        return deferred.promise();
+    };
+})(jQuery);
+
+///////////
+var d1 = lookupCountryWithFreegeoip();
+var d2 = lookupCountryWithHostipInfo();
+var d3 = lookupLatLongWithBrowserGeolocation().pipe(latLongToCountryWithGeonames);
+var d4 = lookupCountryWithGeoplugin();
+
+$.reverseWhen(d1, d2, d3, d4).then(function(r,s,t,u,v,w) {
+    console.log('good');
+    console.log('"' + r.code + '" (thanks to "' + r.who + '")');
+    $('body').append('<p>your country\'s code: ' + r.code + '</p><p>'
+          + '(thanks to "' + r.who + '")</p>');
+}, function(x1, x2, x3, x4) {
+    console.log('bad');
+    console.log([x1, x2, x3, x4]);
+});
+
+$.when(d1, d2, d4).then(function () {
+    console.log('--------');
+});
+$.when(d1, d2, d3, d4).then(function () {
+    console.log('========');
+});
+
+//////////////////////////////////////////////////
+
+function lookupLatLongWithBrowserGeolocation() {
+    var me = 'browser geolocation',
+        dfr = $.Deferred();
+
+    navigator.geolocation.getCurrentPosition(function(position) {
+        console.log(me + ' resolving: ' + position.coords.latitude + ',' + position.coords.longitude);
+
+        dfr.resolve({who: me, coords: position.coords});
+    });
+
+    return dfr;
+}
+
+// supports CORS and JSONP
+function latLongToCountryWithGeonames(data) {
+    var me = 'geonames',
+        dfr = $.ajax({
+            url: 'http://ws.geonames.org/countryCode',
+            data: {
+                lat: data.coords.latitude,
+                lng: data.coords.longitude,
+                type: 'JSON'
+            },
+            dataType: $.support.cors ? 'json' : 'jsonp'
+        });
+
+    dfr = dfr.pipe(function(results) {
+        if (results.countryCode === 'XX') {
+            console.log(me + ' rejecting: ' + results.countryCode);
+
+            return $.Deferred().reject();
+        } else {
+            console.log(me + ' returning: ' + results.countryCode);
+
+            return {who: me, code: results.countryCode};
+        }
+    });
+    return dfr;
+}
+
+// supports CORS only
+function lookupCountryWithHostipInfo() {
+    if ($.support.cors) {  // doesn't support JSONP
+        var me = 'hostip.info',
+            dfr = $.ajax({
+                url: 'http://api.hostip.info/get_json.php',
+                dataType: 'json'
+            });
+
+        dfr = dfr.pipe(function(results) {
+            if (results.country_code === 'XX') {
+                console.log(me + ' rejecting: ' + results.country_code);
+
+                return $.Deferred().reject();
+            } else {
+                console.log(me + ' returning: ' + results.country_code);
+
+                return {who: me, code: results.country_code};
+            }
+        });
+        return dfr;
+    } else {
+        return undefined;
+    }
+}
+
+// supports JSONP only
+function lookupCountryWithGeoplugin() {
+    var me = 'geoplugin',
+        dfr = $.ajax({
+            url: 'http://www.geoplugin.net/json.gp?',
+            dataType: 'jsonp', // doesn't support CORS
+            data: {
+                'native': 1
+            },
+            jsonp: 'jsoncallback'
+        });
+
+    dfr = dfr.pipe(function(results) {
+        console.log(me + ' returning: ' + results.geoplugin_countryCode);
+        
+        return {who: me, code: results.geoplugin_countryCode};
+    });
+    return dfr;
+}
+
+// supports CORS and JSONP
+function lookupCountryWithFreegeoip() {
+    var me = 'freegeoip',
+        dfr = $.ajax({
+            url: 'http://freegeoip.net/json/',
+            dataType: $.support.cors ? 'json' : 'jsonp'
+        });
+
+    dfr = dfr.pipe(function(results) {
+        console.log(me + ' returning: ' + results.country_code);
+        
+        return {who: me, code: results.country_code};
+    });
+    return dfr;
+}
+
+
+
+
+});//]]>  
+
+</script>
+
+
+</head>
+<body>
+  
+  
+</body>
+
+
+</html>
+
