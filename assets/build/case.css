@@ -1,0 +1,80 @@
+/* fixed sidebar */
+@media screen and (min-width: 960px) {
+  .col-sidebar {
+    float: right;
+    position: relative;
+  }
+}
+
+/* table of contents */
+.case-toc {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #eee;
+  background: #fafafa;
+  border-radius: 0.25em;
+}
+.case-toc li {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #eee;
+}
+.case-toc li:first-child {
+  border-top: 0;
+}
+.case-toc a {
+  display: block;
+  padding: 0.5em;
+}
+.case-toc li.active a {
+  font-weight: bold;
+  color: #222;
+}
+
+/* overview */
+.page-title {
+  font-weight: bold;
+}
+.case-stage a {
+  display: inline-block;
+  padding: 1em 1.5em;
+  background: #eee;
+  color: #333;
+  border-radius: 0.25em;
+}
+.case-stage a:hover {
+  text-decoration: none;
+  color: #0d60a0;
+}
+.accused-card {
+  padding: 1.5em;
+  background: #f5f5f5;
+  max-height: 15em;
+  overflow: auto;
+  font-size: 0.75em;
+}
+.accused-image img {
+  display: block;
+  width: 100%;
+}
+.accused-card p {
+  margin: 0;
+}
+.accused-status {
+  display: inline-block;
+  background: #555;
+  color: #fff;
+  padding: 0.2em 0.6em 0.2em 0.2em;
+  margin: 0 0 0.5em 0;
+  font-weight: normal;
+  border-radius: 0.35em;
+  line-height: 24px;
+  border: 1px solid #fff;
+}
+
+/* ask a question */
+ul.ask-the-court li, ul.related-cases li {
+  list-style-type: square;
+  margin: 0 0 0.5em 0;
+}
